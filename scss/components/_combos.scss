@@ -1,0 +1,39 @@
+@import '../base/listas';
+@import '../base/variables';
+@import '../base/mixins';
+@import '../base/maps';
+
+main {
+    .combos-presentacion {
+        h2 {
+            background-color: nth($colores-titulos, 2);
+            font-family: $font-title;
+            text-align: center;
+            font-size: $font-size-title;
+        }
+
+        @include imagenes-exhibicion(url(../images/bellaHeader.jpg), 'secciones-ventas');
+    }
+
+    .combos-productos {
+        figure {
+            img {
+                width: 100%;
+                height: 25vh;
+            }
+
+            h5 {
+                text-align: map-get($descripcion-productos, posicion-titulo);
+                font-size: map-get($descripcion-productos, tam-fuente-titulo);
+                color: map-get($descripcion-productos, color-fuente-titulo);
+            }
+
+            p {
+                text-align: map-get($descripcion-productos, posicion-desc);
+                font-size: map-get($descripcion-productos, tam-fuente-descr);
+                color: map-get($descripcion-productos, color-fuente-desc);
+                font-weight: map-get($descripcion-productos, fuente-tipo);
+            }
+        }
+    }
+}

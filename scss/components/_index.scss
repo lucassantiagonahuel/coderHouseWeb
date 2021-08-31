@@ -1,0 +1,146 @@
+@import '../base/listas';
+@import '../base/variables';
+@import '../base/mixins';
+
+main {
+    background-color: rgba(255, 255, 255, 0.7);
+
+    .carrusel-principal {
+        margin-bottom: 1rem;
+
+        img {
+            @include carrusel-tipo('carrusel-principal');
+        }
+    }
+
+    .productos-exhibicion {
+        height: 80rem;
+
+        .row {
+            height: 50%;
+        }
+
+        h3 {
+            font-size: 6rem;
+            color: rgba(0, 0, 0, 0.8);
+            background: $colores-descripciones;
+
+            &:hover {
+                animation: animacion-nombre-categoria 4s;
+            }
+
+            @keyframes animacion-nombre-categoria {
+                0% {
+                    font-size: 8rem;
+                }
+
+
+            }
+        }
+
+        #ofertas {
+            @include imagenes-exhibicion(url(../images/ofertasHeaderRecortada.jpg), 'index-exhibicion');
+        }
+
+        #liquidaciones {
+            @include imagenes-exhibicion(url(../images/liquidacionesBolsas.jpg), 'index-exhibicion');
+        }
+
+        #arosExhibicion {
+            @include imagenes-exhibicion(url(../images/aroAceroBlanco.jpg), 'index-exhibicion');
+        }
+
+        #collarExhibicion {
+            @include imagenes-exhibicion(url(../images/cadenaConDije.jpg), 'index-exhibicion');
+        }
+    }
+
+    #clasicos {
+        width: 100%;
+
+        h2 {
+            background-color: nth($colores-titulos, 2);
+            font-family: $font-title;
+            text-align: center;
+            font-size: $font-size-title;
+            padding: 5rem;
+            margin: 3rem 0;
+        }
+
+        img {
+            @include carrusel-tipo('carrusel-index-secciones');
+        }
+    }
+
+    #tendencias {
+        h2 {
+            background-color: nth($colores-titulos, 2);
+            font-family: $font-title;
+            text-align: center;
+            font-size: $font-size-title;
+            padding: 5rem;
+            margin: 3rem 0;
+        }
+
+        a {
+            text-decoration: none;
+
+            #ultimasTendencias {
+                height: 100vh;
+                @include imagenes-exhibicion(url(../images/ultimaTendenciaVerde.jpg), 'index-exhibicion');
+
+                h3 {
+                    font-size: 6rem;
+                    color: rgba(0, 0, 0, 0.8);
+                    background: $colores-descripciones;
+                }
+            }
+
+        }
+
+    }
+
+    #categorias {
+        h2 {
+            background-color: nth($colores-titulos, 2);
+            font-family: $font-title;
+            text-align: center;
+            font-size: $font-size-title;
+            padding: 5rem;
+            margin: 3rem 0;
+        }
+
+        img {
+            @include carrusel-tipo('carrusel-index-secciones');
+        }
+    }
+
+    #ubicacion {
+        margin: 1rem 0;
+
+        h2 {
+            background-color: nth($colores-titulos, 2);
+            font-family: $font-title;
+            text-align: center;
+            font-size: $font-size-title;
+            padding: 5rem;
+            margin: 3rem 0;
+        }
+
+        a {
+            text-decoration: none;
+
+            #ubicacionImagenMapa {
+                height: 50vh;
+                @include imagenes-exhibicion(url(../images/mapaubicacion.jpg), 'index-exhibicion');
+
+                h3 {
+                    font-size: 6rem;
+                    color: rgba(0, 0, 0, 0.8);
+                    background: $colores-descripciones;
+                }
+            }
+        }
+    }
+
+}

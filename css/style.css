@@ -1,0 +1,560 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
+/*Mixin que controla los hover del header*/
+/*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
+header .navbar {
+  background-color: rgba(247, 218, 223, 0.9);
+  box-shadow: 0px 2px 5px 0px rgba(255, 123, 123, 0.8);
+}
+header .nombre-empresa {
+  font-family: "Vidaloka", serif;
+  transition: all 1s;
+}
+header .nombre-empresa:hover {
+  background-color: rgba(244, 128, 177, 0.5);
+  border-radius: 1rem;
+  transform: scale(1.1);
+}
+header .font-menu-nav {
+  font-size: 1.9rem;
+}
+header #navbarNav ul li a {
+  transition: all 1s;
+}
+header #navbarNav ul li a:hover {
+  background-color: rgba(244, 128, 177, 0.5);
+  border-radius: 1rem;
+  transform: scale(1.001);
+}
+header #navbarNav ul li a:active {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 576px) {
+  header #navbarNav ul li a:hover {
+    background-color: rgba(244, 128, 177, 0.5);
+    border-radius: 1rem;
+    transform: scale(1.005);
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 960px) {
+  header #navbarNav ul li a:hover {
+    background-color: rgba(244, 128, 177, 0.5);
+    border-radius: 1rem;
+    transform: scale(1.02);
+  }
+}
+
+body {
+  padding-top: 6.4rem;
+}
+
+footer {
+  background-color: rgba(191, 143, 176, 0.5);
+}
+footer .footer-sociales {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-sociales nav ul {
+  display: flex;
+  list-style: none;
+}
+footer .footer-sociales nav ul li img:hover {
+  background-color: #ff825f;
+  font-weight: bold;
+  border-radius: 2.5rem;
+}
+footer .footer-negocios {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+footer .footer-negocios h5 {
+  font-size: 2rem;
+}
+footer .footer-negocios nav ul li {
+  color: rgba(255, 130, 95, 0.9);
+  width: 15%;
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
+footer .footer-negocios nav ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.9);
+}
+footer .footer-negocios nav ul li a:hover {
+  background-color: #ff825f;
+  font-weight: bold;
+  border-radius: 2.5rem;
+}
+footer .footer-contacto {
+  text-align: end;
+}
+footer .footer-contacto a img {
+  height: 5rem;
+  position: fixed;
+  bottom: 5rem;
+  right: 0.5rem;
+  transition: all 1s;
+}
+footer .footer-contacto a img:hover {
+  transform: rotate(360deg);
+}
+footer .scrool {
+  text-align: end;
+  position: fixed;
+  bottom: 0.05rem;
+  right: 0.05rem;
+}
+footer .footer-derechos {
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+footer .footer-derechos p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
+/*Mixin que controla los hover del header*/
+/*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
+main {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+main .carrusel-principal {
+  margin-bottom: 1rem;
+}
+main .carrusel-principal img {
+  width: 100%;
+  height: 92.7vh;
+}
+main .productos-exhibicion {
+  height: 80rem;
+}
+main .productos-exhibicion .row {
+  height: 50%;
+}
+main .productos-exhibicion h3 {
+  font-size: 6rem;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 192, 203, 0.8);
+}
+main .productos-exhibicion h3:hover {
+  animation: animacion-nombre-categoria 4s;
+}
+@keyframes animacion-nombre-categoria {
+  0% {
+    font-size: 8rem;
+  }
+}
+main .productos-exhibicion #ofertas {
+  background-image: url(../images/ofertasHeaderRecortada.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .productos-exhibicion #liquidaciones {
+  background-image: url(../images/liquidacionesBolsas.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .productos-exhibicion #arosExhibicion {
+  background-image: url(../images/aroAceroBlanco.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .productos-exhibicion #collarExhibicion {
+  background-image: url(../images/cadenaConDije.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #clasicos {
+  width: 100%;
+}
+main #clasicos h2 {
+  background-color: rgba(179, 116, 126, 0.2);
+  font-family: "Rokkitt", serif;
+  text-align: center;
+  font-size: 5rem;
+  padding: 5rem;
+  margin: 3rem 0;
+}
+main #clasicos img {
+  width: 100%;
+  height: 60vh;
+}
+main #tendencias h2 {
+  background-color: rgba(179, 116, 126, 0.2);
+  font-family: "Rokkitt", serif;
+  text-align: center;
+  font-size: 5rem;
+  padding: 5rem;
+  margin: 3rem 0;
+}
+main #tendencias a {
+  text-decoration: none;
+}
+main #tendencias a #ultimasTendencias {
+  height: 100vh;
+  background-image: url(../images/ultimaTendenciaVerde.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #tendencias a #ultimasTendencias h3 {
+  font-size: 6rem;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 192, 203, 0.8);
+}
+main #categorias h2 {
+  background-color: rgba(179, 116, 126, 0.2);
+  font-family: "Rokkitt", serif;
+  text-align: center;
+  font-size: 5rem;
+  padding: 5rem;
+  margin: 3rem 0;
+}
+main #categorias img {
+  width: 100%;
+  height: 60vh;
+}
+main #ubicacion {
+  margin: 1rem 0;
+}
+main #ubicacion h2 {
+  background-color: rgba(179, 116, 126, 0.2);
+  font-family: "Rokkitt", serif;
+  text-align: center;
+  font-size: 5rem;
+  padding: 5rem;
+  margin: 3rem 0;
+}
+main #ubicacion a {
+  text-decoration: none;
+}
+main #ubicacion a #ubicacionImagenMapa {
+  height: 50vh;
+  background-image: url(../images/mapaubicacion.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #ubicacion a #ubicacionImagenMapa h3 {
+  font-size: 6rem;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 192, 203, 0.8);
+}
+
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
+/*Mixin que controla los hover del header*/
+/*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
+main .categorias-presentacion .categorias-titulo {
+  background-image: url(../images/categoriaHeader.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 23vh;
+}
+main .categorias-presentacion .categorias-titulo h3 {
+  background-color: rgba(179, 116, 126, 0.2);
+  font-family: "Rokkitt", serif;
+  text-align: center;
+  font-size: 5rem;
+}
+main .categorias-presentacion figure a img {
+  width: 100%;
+  height: 30vh;
+}
+main .categorias-presentacion figure p {
+  font-size: 2rem;
+  text-align: center;
+  color: #FF0066;
+  font-weight: bold;
+}
+main .categorias-productos figure img {
+  width: 100%;
+  height: 35vh;
+}
+main .categorias-productos figure h5 {
+  text-align: center;
+  font-size: 3rem;
+  color: #ff7b7b;
+}
+main .categorias-productos figure p {
+  text-align: center;
+  font-size: 1.7rem;
+  color: #ffb5c1;
+  font-weight: bold;
+}
+
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
+/*Mixin que controla los hover del header*/
+/*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
+main .clasicos-presentacion {
+  height: 66vh;
+}
+main .clasicos-presentacion img {
+  width: 100%;
+  height: 65vh;
+}
+main .clasicos-productos .clasicos-titulo {
+  background-image: url(../images/bellezaHeader.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 23vh;
+}
+main .clasicos-productos .clasicos-titulo h2 {
+  background-color: rgba(179, 116, 126, 0.2);
+  font-family: "Rokkitt", serif;
+  text-align: center;
+  font-size: 5rem;
+}
+main .clasicos-productos figure img {
+  width: 100%;
+  height: 20rem;
+}
+main .clasicos-productos figure h5 {
+  text-align: center;
+  font-size: 3rem;
+  color: #ff7b7b;
+}
+main .clasicos-productos figure p {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffb5c1;
+  font-weight: bold;
+}
+
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
+/*Mixin que controla los hover del header*/
+/*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
+main .combos-presentacion {
+  background-image: url(../images/bellaHeader.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 23vh;
+}
+main .combos-presentacion h2 {
+  background-color: rgba(179, 116, 126, 0.2);
+  font-family: "Rokkitt", serif;
+  text-align: center;
+  font-size: 5rem;
+}
+main .combos-productos figure img {
+  width: 100%;
+  height: 25vh;
+}
+main .combos-productos figure h5 {
+  text-align: center;
+  font-size: 3rem;
+  color: #ff7b7b;
+}
+main .combos-productos figure p {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffb5c1;
+  font-weight: bold;
+}
+
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
+/*Mixin que controla los hover del header*/
+/*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
+main .ingresos-presentacion {
+  height: 66vh;
+}
+main .ingresos-presentacion img {
+  width: 100%;
+  height: 65vh;
+}
+main .ingresos-presentacion h5 {
+  display: inline;
+  background-color: rgba(179, 116, 126, 0.4);
+  font-size: 5rem;
+  color: #ffe2e2;
+}
+main .ingresos-presentacion p {
+  background-color: rgba(179, 116, 126, 0.4);
+  font-size: 4rem;
+  color: #ffe2e2;
+}
+main .ingresos-productos .ingresos-titulo {
+  background-image: url(../images/ultimaTendenciaHeader.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 23vh;
+}
+main .ingresos-productos .ingresos-titulo h2 {
+  background-color: rgba(179, 116, 126, 0.2);
+  font-family: "Rokkitt", serif;
+  text-align: center;
+  font-size: 5rem;
+}
+main .ingresos-productos figure img {
+  width: 100%;
+  height: 20rem;
+}
+main .ingresos-productos figure h5 {
+  text-align: center;
+  font-size: 3rem;
+  color: #ff7b7b;
+}
+main .ingresos-productos figure p {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffb5c1;
+  font-weight: bold;
+}
+
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
+main .contacto-presentacion img {
+  width: 100%;
+  height: 70vh;
+}
+main .contacto-form .contacto-titulo {
+  width: 100%;
+  height: 22vh;
+  background-image: url(../images/emailHeader.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .contacto-form .contacto-titulo h2 {
+  background-color: rgba(179, 116, 126, 0.2);
+  font-family: "Rokkitt", serif;
+  text-align: center;
+  font-size: 5rem;
+}
+main .contacto-form p {
+  text-align: center;
+  font-size: 2rem;
+}
+main .contacto-form form {
+  text-align: center;
+}
+main .contacto-form form label {
+  font-family: cursive;
+  font-size: 2.3rem;
+}
+main .contacto-form form input {
+  background-color: rgba(164, 232, 212, 0.1);
+  border: none;
+  text-decoration: underline;
+  text-align: center;
+}
+main .contacto-form form button {
+  font-size: 2rem;
+  background-color: #FF0066;
+}
+
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
+/*Mixin que controla los hover del header*/
+/*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
+main .ubicacion-principal .ubicacion-titulo {
+  background-image: url(../images/mujerHeader.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 23vh;
+}
+main .ubicacion-principal .ubicacion-titulo h2 {
+  background-color: rgba(179, 116, 126, 0.2);
+  font-family: "Rokkitt", serif;
+  text-align: center;
+  font-size: 5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Linkeamos a boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!-- Linkeamos al CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Link a iconos -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Ani Nijou</title>
+</head>
+
+<body>
+  <!-- Header que va a ser igual en todo el sistema -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="index.html">
+          <h1 class="nombre-empresa display-4">AniBijou</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto font-menu-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="ultimosIngresos.html">Lo ultimo!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="clasicos.html">Clásicos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="categorias.html">Categorias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="combo.html">¡Combos!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="¿Que estas buscando?" aria-label="Search">
+            <i class="material-icons">search</i>
+            <i class="material-icons">account_circle</i>
+            <i class="material-icons">shopping_cart</i>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Seccion imagens para carrusel que va a estar en el ingreso de la pagina bajo el nav -->
+    <section class="carrusel-principal">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/ultimasTendenciasPresentacion.jpg" class="d-block w-100"
+              alt="Imagen de presentacion referencial a regaleria">
+          </div>
+          <div class="carousel-item">
+            <img src="images/cuotasTarjetas.jpg" class="d-block w-100"
+              alt="Imagen de presentacion referencial a regaleria">
+          </div>
+          <div class="carousel-item">
+            <img src="images//descuentoCarrusel.jpg" class="d-block w-100"
+              alt="Imagen de presentacion referencial a regaleria">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Seccion con imagenes y una pequeña descripcion sobre la imagen referida a su contenido -->
+    <section class="container productos-exhibicion">
+      <div class="row py-3">
+        <div class="col-lg-6 col-md-12" id="ofertas">
+          <h3>Ofertas</h3>
+        </div>
+        <div class="col-lg-6 col-md-12" id="liquidaciones">
+          <h3>Liquidaciones</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-12" id="arosExhibicion">
+          <h3>Aros</h3>
+        </div>
+        <div class="col-lg-6 col-md-12" id="collarExhibicion">
+          <h3>Collares</h3>
+        </div>
+      </div>
+    </section>
+    <!-- Seccion que va a contener imagenes con una minima descripcion y precio de los productos mas vendidos, los "clasicos" -->
+    <section id="clasicos">
+      <!-- Titulo de la seccion -->
+      <h2>Nuestros Clasicos!</h2>
+      <!-- Carrusel de imagenes -->
+      <div class="container-fluid">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/anillosAcero.jpg" class="d-block w-100" alt="Imagen que contiene anillos de dama">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Anillo Dama</h2>
+                <h3>$300</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/moñoPelo.jpg" class="d-block w-100" alt="Imagen que contiene moño de pelo de dama">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Moño pelo dama</h2>
+                <h3>$500</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/mujercombo2.jpg" class="d-block w-100" alt="Imagen que contiene un bolso de dama">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Bolso dama</h2>
+                <h3>$1800</h3>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Seccion que va a contener una imagen con una descripcion sobre ella de la ultima tendencia de la epoca -->
+    <section id="tendencias">
+      <!-- Titulo de la seccion -->
+      <h2>Conoce las ultimas tendencias!!</h2>
+      <!--Imagen con minima descripcion de la seccion -->
+      <a href="ultimosIngresos.html" target="_blank">
+        <div id="ultimasTendencias">
+          <h3>Mira las ultimas tendencias en moda para vos!</h3>
+        </div>
+      </a>
+    </section>
+    <!-- Seccion que va a tener imagenes que agrupan dentro las diferentes categorias mas importantes -->
+    <section id="categorias">
+      <!-- Titulo de la seccion -->
+      <h2>Categorias</h2>
+      <!-- Carrusel de imagenes -->
+      <div class="container-fluid">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/abridoresDama.jpg" class="d-block w-100" alt="Imagen de la categoria anillos">
+            </div>
+            <div class="carousel-item">
+              <img src="images/anillosAcero.jpg" class="d-block w-100" alt="Imagen de la categoria accesorios">
+            </div>
+            <div class="carousel-item">
+              <img src="images/arosArgollaFinal.jpg" class="d-block w-100" alt="Imagen de la categoria collares">
+            </div>
+            <div class="carousel-item">
+              <img src="images/pulseraAceroVariosModelos.jpg" class="d-block w-100" alt="Imagen de la categoria bolsos">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Seccion que va a contener una imagen y la descripcion minima que van a hacer referencia a las ubicaciones de los locales de venta fisicos -->
+    <section id="ubicacion">
+      <!-- Titulo de la seccion -->
+      <h2>¿Donde encontrarnos?</h2>
+      <!-- Imagen referencial -->
+      <div class="container">
+        <a href="ubicacion.html" target="_blank">
+          <div id="ubicacionImagenMapa">
+            <h3>Encontra la tienda mas cerca tuyo!!</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <!--Links referenciales a redes sociales -->
+    <section class="footer-sociales">
+      <nav>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/facebook-circled--v2.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/instagram-new--v2.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/twitter--v2.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/linkedin-circled--v2.png" />
+            </a>
+          </li>
+          <li>
+            <a href="contacto.html">
+              <img src="https://img.icons8.com/color/48/000000/gmail--v2.png" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- Datos sobre la compra/devolucion/etc de manera online -->
+    <section class="footer-negocios">
+      <!-- Titulo referencial a la tienda online -->
+      <h5>Tienda online</h5>
+      <!-- Links referenciales -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Compras</a>
+          </li>
+          <li>
+            <a href="#">Devoluciones</a>
+          </li>
+          <li>
+            <a href="#">Preguntas frecuentes</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- Link/Icono de contacto -->
+    <section class="footer-contacto">
+      <a href="">
+        <img src="images/wspicon.svg" alt="Icono de whatsapp">
+      </a>
+    </section>
+    <!-- Link/Icono de scroll hacia la parte superior -->
+    <section class="scrool">
+      <a href="#header">
+        <img src="https://img.icons8.com/ios-filled/50/000000/up--v1.png" alt="Icono de flecha hacia arriba">
+      </a>
+    </section>
+    <!-- Informacion de derechos reservados y creador -->
+    <section class="footer-derechos">
+      <p>
+        ANINIJOU.COM.AR ©2012-2021. TODOS LOS DERECHOS RESERVADOS. <a href="">Creado por Lucas Nahuel</a>
+      </p>
+    </section>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+@import '../base/maps';
+
+footer {
+    background-color: map-get($social-Fot, bg-color-titulo);
+
+    .footer-sociales {
+        display: flex;
+        justify-content: center;
+
+        nav {
+            ul {
+                display: flex;
+                list-style: none;
+
+                li {
+                    img {
+                        &:hover {
+                            background-color: map-get($social-Fot, bg-color-hover);
+                            font-weight: map-get($social-Fot, fuente-hover);
+                            border-radius: map-get($social-Fot, border-r-negocio);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-negocios {
+        margin: 0.5rem;
+        padding: 0.5rem;
+
+        h5 {
+            font-size: map-get($social-Fot, tam-titulo-navegable);
+        }
+
+        nav {
+            ul {
+                li {
+                    color: map-get($social-Fot, bg-color-navegable);
+                    width: 15%;
+                    font-size: map-get($social-Fot, tam-navegable-negocio);
+                    margin-left: 1.5rem;
+
+                    a {
+                        text-decoration: none;
+                        color: nth($colores-titulos, 1);
+
+                        &:hover {
+                            background-color: map-get($social-Fot, bg-color-hover);
+                            font-weight: map-get($social-Fot, fuente-hover);
+                            border-radius: map-get($social-Fot, border-r-negocio);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-contacto {
+        text-align: end;
+
+        a {
+            img {
+                height: 5rem;
+                position: fixed;
+                bottom: 5rem;
+                right: 0.5rem;
+                transition: all 1s;
+
+                &:hover {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+
+    .scrool {
+        text-align: end;
+        position: fixed;
+        bottom: 0.05rem;
+        right: 0.05rem;
+    }
+
+    .footer-derechos {
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+
+        p {
+            text-align: center;
+            font-size: 1.3rem;
+        }
+    }
+}

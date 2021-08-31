@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Linkeamos a boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!-- Linkeamos al CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Link a iconos -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Lo ultimo!</title>
+</head>
+
+<body>
+  <!-- El logo y la barra de navegacion es la misma para todo el sistema -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="index.html">
+          <h1 class="nombre-empresa display-4">AniBijou</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto font-menu-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="ultimosIngresos.html">Lo ultimo!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="clasicos.html">Clásicos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="categorias.html">Categorias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="combo.html">¡Combos escenciales!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="¿Que estas buscando?" aria-label="Search">
+            <i class="material-icons">search</i>
+            <i class="material-icons">account_circle</i>
+            <i class="material-icons">shopping_cart</i>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Seccion que contiene un carrusel con imagenes haciendo referencia a lo ultimo en moda por cada categoria de modo informativo-->
+    <section class="ingresos-presentacion">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="images/loUltimoCarrusel1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Encontra lo ultimo en tendencias para vos!!</h5>
+              <p>Actualiza tu outlet!</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/loUltimoCarrusel2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Regala moda</h5>
+              <p>Regalale a esa persona que queres lo ultimo en tendencias</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/loUltimoCarrusel3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>La moda sos vos!</h5>
+              <p>Date ese gusto que tanto queres!</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Seccion con un titulo mediano que hace referencia a que mires las ultimas novedades e ingresos -->
+    <section class="ingresos-productos">
+      <!-- Titulo referencial -->
+      <div class="ingresos-titulo">
+        <h2>Ultimos ingresos!</h2>
+      </div>
+      <!-- Imagenes con los ultimos ingresos y alguna descripcion minima en la misma -->
+      <figure class="container-fluid">
+        <div class="row py-3">
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100">
+              <img src="images/cadenaAceroConDije.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cadena Acero Con Dije</h5>
+                <p class="card-text">$700</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100">
+              <img src="images/arosOroPruebaChiquito.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Aro Acero Oro</h5>
+                <p class="card-text">$1000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100">
+              <img src="images/vinchaNudoUnisex.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Vincha Nudo</h5>
+                <p class="card-text">$350</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100">
+              <img src="images/aroTrepadorAcero.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Aro Trepador Acero</h5>
+                <p class="card-text">$800</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------------------------------------------------------------>
+        <div class="row py-3">
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100">
+              <img src="images/denarioAcero.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Denario Acero</h5>
+                <p class="card-text">$700</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100">
+              <img src="images/pulseraAceroBlanco.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pulsera Acero Blanco</h5>
+                <p class="card-text">$1000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100">
+              <img src="images/pulseraAceroEstrellas.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pulsera Acero Estrellas</h5>
+                <p class="card-text">$350</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100">
+              <img src="images/rosarioAcero.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Rosario Acero</h5>
+                <p class="card-text">$800</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------------------------------------------------------------>
+        <div class="row py-3">
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100">
+              <img src="images/cepilloPelo.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cepillos Pelo</h5>
+                <p class="card-text">$700</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100">
+              <img src="images/colitasPulseritas.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Colitas Pulseritas</h5>
+                <p class="card-text">$1000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100">
+              <img src="images/espejoRedondo.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Espejo Redondo</h5>
+                <p class="card-text">$350</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100">
+              <img src="images/hebillax10.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hebillas Peineta</h5>
+                <p class="card-text">$800</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </figure>
+    </section>
+  </main>
+  <!-- El footer va a ser como el header, va a ser el mismo en cada vista -->
+  <footer>
+    <!--Links referenciales a redes sociales -->
+    <section class="footer-sociales">
+      <nav>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/facebook-circled--v2.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/instagram-new--v2.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/twitter--v2.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com" target="_blank">
+              <img src="https://img.icons8.com/color/48/000000/linkedin-circled--v2.png" />
+            </a>
+          </li>
+          <li>
+            <a href="contacto.html">
+              <img src="https://img.icons8.com/color/48/000000/gmail--v2.png" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- Datos sobre la compra/devolucion/etc de manera online -->
+    <section class="footer-negocios">
+      <!-- Titulo referencial a la tienda online -->
+      <h5>Tienda online</h5>
+      <!-- Links referenciales -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Compras</a>
+          </li>
+          <li>
+            <a href="#">Devoluciones</a>
+          </li>
+          <li>
+            <a href="#">Preguntas frecuentes</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- Link/Icono de contacto -->
+    <section class="footer-contacto">
+      <a href="">
+        <img src="images/wspicon.svg" alt="Icono de whatsapp">
+      </a>
+    </section>
+    <!-- Link/Icono de scroll hacia la parte superior -->
+    <section class="scrool">
+      <a href="#comienzo">
+        <img src="https://img.icons8.com/ios-filled/50/000000/up--v1.png" alt="Icono de flecha hacia arriba">
+      </a>
+    </section>
+    <!-- Informacion de derechos reservados y creador -->
+    <section class="footer-derechos">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi iure minus nesciunt blanditiis,
+        consequuntur libero ratione similique veritatis natus facere nostrum quae non soluta laudantium
+        quaerat aperiam molestias pariatur fugit!
+      </p>
+    </section>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/mixins';
+
+
+header {
+    .navbar {
+        background-color: nth($colores-navbar, 1);
+        box-shadow: nth($colores-navbar, 2);
+    }
+
+    .nombre-empresa {
+        font-family: $font-nombre-empresa;
+        transition: all 1s;
+
+        &:hover {
+            @include header-nav(scale(1.1));
+        }
+    }
+
+    .font-menu-nav {
+        font-size: 1.9rem;
+    }
+
+    #navbarNav {
+        ul {
+            li {
+                a {
+                    transition: all 1s;
+
+                    &:hover {
+                        @include header-nav(scale(1.001));
+                    }
+
+                    &:active {
+                        text-decoration: underline;
+                    }
+
+                    @media only screen and (max-width: 576px) {
+                        &:hover {
+                            @include header-nav(scale(1.005));
+                        }
+                    }
+
+                    @media only screen and (min-width: 577px) and (max-width:960px) {
+                        &:hover {
+                            @include header-nav(scale(1.02));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

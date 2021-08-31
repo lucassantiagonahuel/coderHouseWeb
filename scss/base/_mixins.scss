@@ -1,0 +1,40 @@
+/*Mixin que controla los hover del header*/
+@mixin header-nav($transf) {
+    background-color: rgba(244, 128, 177, 0.5);
+    border-radius: 1rem;
+    transform: $transf;
+}
+
+/*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+@mixin imagenes-exhibicion($url, $origen) {
+    background-image: $url;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @if $origen=='secciones-ventas' {
+        width: 100%;
+        height: 23vh;
+    }
+}
+
+/*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
+@mixin carrusel-tipo($tipo) {
+    @if $tipo=='carrusel-principal' {
+        width: 100%;
+        height: 92.7vh;
+    }
+
+    @else if $tipo=='carrusel-index-secciones' {
+        width: 100%;
+        height: 60vh;
+    }
+
+    @else {
+        width: 100%;
+        height: 65vh;
+    }
+}

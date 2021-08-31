@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linkeamos a boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Linkeamos al CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link a iconos -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Donde encontrarnos</title>
+</head>
+
+<body>
+    <!-- El logo y la barra de navegacion es la misma para todo el sistema -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="index.html">
+                    <h1 class="nombre-empresa display-4">AniBijou</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav m-auto font-menu-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="ultimosIngresos.html">Lo ultimo!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="clasicos.html">Clásicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="categorias.html">Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="combo.html">¡Combos escenciales!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="¿Que estas buscando?"
+                            aria-label="Search">
+                        <i class="material-icons">search</i>
+                        <i class="material-icons">account_circle</i>
+                        <i class="material-icons">shopping_cart</i>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Seccion que va a contener un titulo informativo y luego vamos a ubicar un mapa con nuestras direciones -->
+        <section class="ubicacion-principal">
+            <!-- Titulo se la seccion -->
+            <div class="ubicacion-titulo">
+                <h2>Encontra la tienda mas cercana a vos!!</h2>
+            </div>
+            <div class="row container py-3">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">25 DE MAYO 1275</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <!-- Ubicamos el mapa -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.7655764555316!2d-58.52581928416414!3d-33.009955382427194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa827703074f9%3A0x48a0e60ce907bc2e!2s25%20de%20Mayo%201275%2C%20Gualeguaych%C3%BA%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1627114529224!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- El footer va a ser como el header, va a ser el mismo en cada vista -->
+    <footer>
+        <!--Links referenciales a redes sociales -->
+        <section class="footer-sociales">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="https://img.icons8.com/color/48/000000/facebook-circled--v2.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="https://img.icons8.com/color/48/000000/instagram-new--v2.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" target="_blank">
+                            <img src="https://img.icons8.com/color/48/000000/twitter--v2.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <img src="https://img.icons8.com/color/48/000000/linkedin-circled--v2.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">
+                            <img src="https://img.icons8.com/color/48/000000/gmail--v2.png" />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- Datos sobre la compra/devolucion/etc de manera online -->
+        <section class="footer-negocios">
+            <!-- Titulo referencial a la tienda online -->
+            <h5>Tienda online</h5>
+            <!-- Links referenciales -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Compras</a>
+                    </li>
+                    <li>
+                        <a href="#">Devoluciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Preguntas frecuentes</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- Link/Icono de contacto -->
+        <section class="footer-contacto">
+            <a href="">
+                <img src="images/wspicon.svg" alt="Icono de whatsapp">
+            </a>
+        </section>
+        <!-- Link/Icono de scroll hacia la parte superior -->
+        <section class="scrool">
+            <a href="#comienzo">
+                <img src="https://img.icons8.com/ios-filled/50/000000/up--v1.png" alt="Icono de flecha hacia arriba">
+            </a>
+        </section>
+        <!-- Informacion de derechos reservados y creador -->
+        <section class="footer-derechos">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi iure minus nesciunt blanditiis,
+                consequuntur libero ratione similique veritatis natus facere nostrum quae non soluta laudantium
+                quaerat aperiam molestias pariatur fugit!
+            </p>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

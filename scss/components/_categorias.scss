@@ -1,0 +1,59 @@
+@import '../base/listas';
+@import '../base/variables';
+@import '../base/mixins';
+@import '../base/maps';
+
+main {
+    .categorias-presentacion {
+
+        .categorias-titulo {
+            @include imagenes-exhibicion(url(../images/categoriaHeader.jpg), 'secciones-ventas');
+
+            h3 {
+                background-color: nth($colores-titulos, 2);
+                font-family: $font-title;
+                text-align: center;
+                font-size: $font-size-title;
+            }
+        }
+
+        figure {
+            a {
+                img {
+                    width: 100%;
+                    height: 30vh;
+                }
+            }
+
+            p {
+                font-size: 2rem;
+                text-align: center;
+                color: #FF0066;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .categorias-productos {
+        figure {
+
+            img {
+                width: 100%;
+                height: 35vh;
+            }
+
+            h5 {
+                text-align: map-get($descripcion-productos, posicion-titulo);
+                font-size: map-get($descripcion-productos, tam-fuente-titulo);
+                color: map-get($descripcion-productos, color-fuente-titulo);
+            }
+
+            p {
+                text-align: map-get($descripcion-productos, posicion-desc);
+                font-size: map-get($descripcion-productos, tam-fuente-descr-cate);
+                color: map-get($descripcion-productos, color-fuente-desc);
+                font-weight: map-get($descripcion-productos, fuente-tipo);
+            }
+        }
+    }
+}

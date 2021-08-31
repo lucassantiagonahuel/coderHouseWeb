@@ -1,0 +1,428 @@
+/* Fuentes importadas de texto */
+@import url('https://fonts.googleapis.com/css2? family = Vidaloka & display = swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap');
+/* Fin fuentes importadas de texto */
+
+
+                                                                             /* HTML GENERAL*/
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+                                                                             /* VARIABLES */
+/* Comienzo variables */
+:root{
+    /* Colors */
+    --color-title: rgba(0, 0, 0, 0.9);
+    --background-title: rgba(179, 116, 126,0.2);
+    --background-navbar:rgba(247, 218, 223,0.9);
+    --background-descripciones:rgba(255, 192, 203,0.8);
+    --boxshadow-navbar:0px 2px 5px 0px rgba(255,123,123,0.8);
+    /* Encabezados */
+    --font-title:'Rokkitt', serif;
+    --font-size-title:5rem;
+    --font-nombre-empresa:'Vidaloka', serif;
+}
+/* Fin variables */
+
+                                                                            /* INDEX */
+/* Header Comienzo */
+.header .navbar{
+    background-color: var(--background-navbar);
+    box-shadow: var(--boxshadow-navbar);
+}
+.nombre-empresa{
+    font-family:var(--font-nombre-empresa);
+    transition: all 1s;
+}
+.font-menu-nav{
+    font-size: 1.9rem;
+}
+#navbarNav ul li a{
+    transition: all 1s;
+}
+/* Fin Header */
+body{
+    padding-top: 6.4rem;
+}
+/* Main Comienzo */
+main{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.carrusel-principal{
+   margin-bottom: 1rem;
+}
+.carrusel-principal img{
+    width: 100%;
+    height: 92.7vh;
+}
+.productos-exhibicion img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 0px 3px rgba(130,130,130,0.1);
+    border-radius: 0.5rem;
+}
+
+#categorias img{
+    width: 24.5%;
+    height: 25rem;
+}
+#clasicos h2,
+#tendencias h2,
+#categorias h2,
+#ubicacion h2{
+    background-color: var(--background-title);
+    font-family: var(--font-title);
+    text-align: center;
+    font-size: var(--font-size-title);
+    padding: 5rem;
+    margin: 3rem 0;
+}
+/* EXHIBICION */
+.productos-exhibicion h3{
+    font-size: 6rem;
+    color: rgba(0, 0, 0, 0.8);
+    background:var(--background-descripciones);
+}
+
+#ofertas,
+#liquidaciones,
+#arosExhibicion,
+#collarExhibicion{
+    position: relative;
+}
+#ofertas h3,
+#collarExhibicion h3{
+    position: absolute;
+    top: 50%;
+    right: 35%;
+} 
+#liquidaciones h3{
+    position: absolute;
+    top: 50%;
+    right: 25%;
+}
+#arosExhibicion h3{
+    position: absolute;
+    top: 50%;
+    right: 45%;
+}
+/* CLASICOS */
+#clasicos{
+   width: 100%;
+}
+/* TENDENCIAS */
+#tendencias{
+    position:relative;
+}
+#tendencias img{
+    width: 100%;
+    height: 10%;
+}
+#tendencias h3{
+    position: absolute;
+    font-size: 6rem;
+    color: rgba(0, 0, 0, 0.8);
+    background:var(--background-descripciones);
+    top: 50%;
+    right: 15%;
+}
+/* CATEGORIAS */
+#categorias img{
+    width: 100%;
+    height: 60rem;
+}
+/* UBICACION */
+#ubicacion{
+    position: relative;
+}
+#ubicacion img{
+    width: 100%;
+    height: 45rem;
+}
+#ubicacion h3{
+    position: absolute;
+    font-size: 6rem;
+    color: rgba(0, 0, 0, 0.8);
+    background:var(--background-descripciones);
+    top: 50%;
+    right: 25%;
+}
+/* Fin Main */
+/* Footer Comienzo */
+footer{
+    background-color: rgba(191, 143, 176,0.5);
+}
+.footer-sociales{
+    display: flex;
+    justify-content: center;
+}
+.footer-sociales nav ul{
+    display: flex;
+    list-style: none;
+}
+.footer-negocios{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+.footer-negocios h5{
+    font-size: 2rem;
+}
+.footer-negocios nav ul li {
+    color: rgba(255, 130, 95, 0.9);
+    width: 15%;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+} 
+.footer-negocios nav ul li a{
+    text-decoration: none;
+    color: var(--color-title);
+}
+.footer-contacto{
+    text-align: end;
+} 
+.footer-contacto a img{
+    height: 5rem;
+    position: fixed;
+    bottom: 5rem;
+    right: 0.5rem;
+    transition: all 1s;
+}
+.scrool{
+    text-align: end;
+    position: fixed;
+    bottom: 0.05rem;
+    right: 0.05rem;
+}
+.footer-derechos{
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+.footer-derechos p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+/* Fin Footer */
+
+                                                                            /* CATEGORIAS */
+/* Main Comienzo */
+.categorias-presentacion h3{
+    background-color: var(--background-title);
+    font-family: var(--font-title);
+    text-align: center;
+    font-size: var(--font-size-title);
+}
+.categorias-presentacion a img{
+    width: 19.6%;
+    height: 20rem;
+}
+.categorias-productos figure{
+    text-align: center;
+}
+.categorias-productos figure img{
+    width: 18%;
+    height: 10rem;
+}
+/* Fin Main */
+                                                                            /* ULTIMOS INGRESOS */
+/* Main Comienzo */
+.ingresos-presentacion{
+    text-align: center;
+}
+.ingresos-presentacion img{
+    width: 30%;
+    height: 20rem;
+}
+.ingresos-productos h2{
+    background-color: var(--background-title);
+    font-family: var(--font-title);
+    text-align: center;
+    font-size: var(--font-size-title);
+}
+.ingresos-productos figure img{
+    width: 19%;
+    height: 10rem;
+}
+/* Fin Main */
+
+
+                                                                            /* CLASICOS */
+/* Main Comienzo */
+.clasicos-presentacion{
+    text-align: center;
+}
+.clasicos-presentacion img{
+    width: 30%;
+    height: 20rem;
+}
+.clasicos-productos h2,
+.clasicos-presentacion h2{
+    background-color: var(--background-title);
+    font-family: var(--font-title);
+    text-align: center;
+    font-size: var(--font-size-title);
+}
+.clasicos-productos figure img{
+    width: 19%;
+    height: 10rem;
+}
+/* Fin Main */
+                                                                            /* COMBOS */
+
+/* Main Comienzo */
+.combos-presentacion h2{
+    background-color: var(--background-title);
+    font-family: var(--font-title);
+    text-align: center;
+    font-size: var(--font-size-title);
+}
+.combos-presentacion p{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.combos-productos figure img{
+    width: 19%;
+    height: 10rem;
+}
+/* Fin Main */
+
+                                                                            /* CONTACTO */
+
+/* Main Comienzo */
+.contacto-presentacion img{
+    width: 100%;
+    height: 45rem;
+}
+.contacto-form h2{
+    background-color: var(--background-title);
+    font-family: var(--font-title);
+    text-align: center;
+    font-size: var(--font-size-title);
+}
+.contacto-form p{
+    text-align: center;
+    font-size: 2rem;
+}
+.contacto-form form {
+    text-align: center;
+}
+.contacto-form form label{
+    font-family:cursive;
+    font-size: 2.3rem;
+}
+.contacto-form form input{
+    background-color: rgba(164, 232, 212, 0.1);
+    border: none;
+    text-decoration: underline;
+    text-align: center;
+}
+.contacto-form form button{
+    font-size: 2rem;
+    background-color:rgba(0, 255, 255, 1);
+}
+/* Fin Main */
+                                                                            /* UBICACION */                                                           
+/* Main Comienzo */
+
+.ubicacion-principal h2{
+    background-color: var(--background-title);
+    font-family: var(--font-title);
+    text-align: center;
+    font-size: var(--font-size-title);
+}
+.ubicacion-principal {
+    text-align: center;
+}
+/* Fin Main */
+
+                                                                    /* PSEUDOCLASES-PSEUDOELEMENTOS//TRANSFORMACIONES-ANIMACIONES*/
+/* HEADER */
+.nombre-empresa:hover,
+header nav ul li a:hover{
+    background-color: rgba(244,128,177, 0.5);
+    border-radius: 1rem;
+    transform: scale(1.1);
+}
+header nav ul li a:active{
+    text-decoration: underline;
+}
+/* MAIN */
+.productos-exhibicion h3:hover{
+    animation: animacion-nombre-categoria 4s;
+}
+@keyframes animacion-nombre-categoria{
+    0%{
+        font-size: 8rem;
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* FOOTER */
+.footer-sociales nav ul li img:hover{
+    background-color: rgba(255, 130, 95, 1);
+    border-radius: 3rem;
+}
+.footer-negocios nav ul li a:hover{
+    background-color: rgba(255, 130, 95, 1);
+    font-weight: bold;
+    border-radius: 2.5rem;
+}
+.footer-contacto a img:hover{
+    transform:rotate(360deg);
+}
+
+                                                                    /* @rule- media type - media feature*/
+/*Mobile*/
+@media only screen and (max-width: 576px){
+/* HEADER */
+header nav ul li a:hover{
+    background-color: rgba(244,128,177, 0.5);
+    border-radius: 1rem;
+    transform: scale(1.005);
+}
+/* MAIN */
+#liquidaciones h3{
+    position: absolute;
+    top: 50%;
+    right: 12%;
+}
+@keyframes animacion-nombre-categoria{
+    0%{
+        font-size: 5rem;
+    }
+    50%{
+        transform: rotate(25deg);
+    }
+
+}
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 577px) and (max-width:960px){
+    /* INDEX */
+/* HEADER COMIENZO */
+
+/* FIN HEADER */
+/* MAIN COMIENZO */
+/* EXHIBICION */
+/* FIN MAIN */
+                                                                                            /* PSEUDOCLASES-PSEUDOELEMENTOS */
+/* HEADER */
+header nav ul li a:hover{
+    background-color: rgba(244,128,177, 0.5);
+    border-radius: 1rem;
+    transform: scale(1.01);
+}
+}
+
+
+

@@ -1,0 +1,24 @@
+$social-Fot:(bg-color-titulo:rgba(191, 143, 176, 0.5),
+    bg-color-hover:rgba(255, 130, 95, 1),
+    bg-color-navegable:rgba(255, 130, 95, 0.9),
+    fuente-hover: bold,
+    border-r-negocio:2.5rem,
+    border-r-derechos:0.1rem solid rgba(0, 0, 0, 0.2),
+    tam-titulo-navegable:2rem,
+    tam-navegable-negocio:1.5rem,
+    tam-derechos-autor:1.3rem);
+
+$descripcion-productos:(color-fuente-titulo:rgba(255, 123, 123, 1),
+    tam-fuente-titulo: 3rem,
+    posicion-titulo:center,
+    posicion-desc:center,
+    tam-fuente-descr:2.5rem,
+    tam-fuente-descr-cate:1.7rem,
+    color-fuente-desc:rgb(255, 181, 193, 1),
+    fuente-tipo:bold);
+
+$descripcion-carrusel-ingresos:(displ-titulo:inline,
+    bg-color-ingresos:rgba(179, 116, 126, 0.4),
+    tam-titulo-fuente:5rem,
+    tam-desc-fuente:4rem,
+    color-fuente:rgba(255, 226, 226, 1));
