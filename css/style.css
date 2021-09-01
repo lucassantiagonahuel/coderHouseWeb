@@ -23,6 +23,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /*Color titulo*/
@@ -140,6 +141,12 @@ footer .footer-derechos {
 footer .footer-derechos p {
   text-align: center;
   font-size: 1.3rem;
+  font-weight: bold;
+}
+footer .footer-derechos p a {
+  color: #ca1250;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 /*Color titulo*/

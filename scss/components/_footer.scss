@@ -82,11 +82,17 @@ footer {
     }
 
     .footer-derechos {
-        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        border-top: map-get($social-Fot,border-r-derechos);
 
         p {
-            text-align: center;
-            font-size: 1.3rem;
+            text-align: map-get($social-Fot,posicion-derechos );
+            font-size: map-get($social-Fot,tam-derechos-autor);
+            font-weight: map-get($social-Fot,fuente-hover);
+            a{
+                color: map-get($social-Fot,fuente-color-creador );
+                font-size: map-get($social-Fot,tam-derechos-creador); 
+                font-weight: map-get($social-Fot,fuente-hover);
+            }
         }
     }
 }
