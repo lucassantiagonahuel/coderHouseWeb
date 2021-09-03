@@ -32,26 +32,29 @@ main {
 
         p {
             text-align: center;
-            font-size: 2rem;
+            font-size: 3rem;
+            color: rgba(245, 2, 99,0.7);
         }
 
         form {
-            text-align: center;
+             text-align: center;
+             width: 70%;
+             margin: 0 auto;
 
-            label {
-                font-family: cursive;
-                font-size: 2.3rem;
-            }
-
-            input {
-                background-color: rgba(164, 232, 212, 0.1);
-                border: none;
-                text-decoration: underline;
+            .form-control{
                 text-align: center;
+                height: 5rem;
+                font-size: 2rem;
+            }
+            .form-mensaje{
+                text-align: center;
+                height: 13rem;
+                font-size: 2rem;
             }
 
             button {
-                font-size: 2rem;
+                width: 75%;
+                font-size: 3rem;
                 background-color: #FF0066;
             }
         }

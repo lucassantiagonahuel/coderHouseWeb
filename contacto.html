@@ -82,17 +82,28 @@
       <!-- Parrafo -->
       <p>
         Para realizar tus consultas por compras en nuestro sitio completá el siguiente formulario.
-
         También podés enviarnos un mail a infoanibijou@gmail.com o un mensaje de WhatsApp al número +54 0303456
       </p>
       <!-- Formulario de contacto -->
-      <form action="">
-        <label for="">Nombre y apellido : </label><input type="text" placeholder="Ingrese su nombre y apellido"><br>
-        <label for="">Telefono : </label><input type="number" placeholder="Ingrese su telefono"><br>
-        <label for="">Email : </label><input type="email" placeholder="Ingrese su email"><br>
-        <label for="">Mensaje : </label><input type="text" placeholder="Escriba su mensaje"><br>
-        <button>Enviar</button>
-      </form>
+      <div class="container">
+        <form class="row py-3">
+            <div class="col-12 py-3">
+              <input type="text" class="form-control" placeholder="Tu nombre y apellido">
+            </div>
+            <div class="col-12 py-3">
+              <input type="number" class="form-control" placeholder="Tu telefono">
+            </div>
+            <div class="col-12 py-3">
+              <input type="email" class="form-control" placeholder="Tu email">
+            </div>
+            <div class="col-12 py-3">
+              <textarea class="form-control form-mensaje" rows="10" cols="30" placeholder="Tu mensaje"></textarea>
+            </div>
+            <div class="col-12 py-3">
+              <button type="submit">Enviar</button>
+            </div>
+        </form>
+      </div>
     </section>
   </main>
   <!-- El footer va a ser como el header, va a ser el mismo en cada vista -->
