@@ -5,7 +5,7 @@
 
 main {
     .clasicos-presentacion {
-        height: 66vh;
+        //height: 66vh;
 
         img {
             @include carrusel-tipo('carrusel-secciones-ventas');

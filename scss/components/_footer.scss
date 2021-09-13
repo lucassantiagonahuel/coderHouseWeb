@@ -66,6 +66,7 @@ footer {
                 bottom: 5rem;
                 right: 0.5rem;
                 transition: all 1s;
+                z-index: 10;
 
                 &:hover {
                     transform: rotate(360deg);
@@ -82,16 +83,17 @@ footer {
     }
 
     .footer-derechos {
-        border-top: map-get($social-Fot,border-r-derechos);
+        border-top: map-get($social-Fot, border-r-derechos);
 
         p {
-            text-align: map-get($social-Fot,posicion-derechos );
-            font-size: map-get($social-Fot,tam-derechos-autor);
-            font-weight: map-get($social-Fot,fuente-hover);
-            a{
-                color: map-get($social-Fot,fuente-color-creador );
-                font-size: map-get($social-Fot,tam-derechos-creador); 
-                font-weight: map-get($social-Fot,fuente-hover);
+            text-align: map-get($social-Fot, posicion-derechos);
+            font-size: map-get($social-Fot, tam-derechos-autor);
+            font-weight: map-get($social-Fot, fuente-hover);
+
+            a {
+                color: map-get($social-Fot, fuente-color-creador);
+                font-size: map-get($social-Fot, tam-derechos-creador);
+                font-weight: map-get($social-Fot, fuente-hover);
             }
         }
     }

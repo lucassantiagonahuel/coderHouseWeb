@@ -1,20 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
 @import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
-@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
-@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
-@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
-@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
-@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
-@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
-@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+
 html {
   font-size: 62.5%;
 }
@@ -29,9 +16,16 @@ html {
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
 /*Mixin que controla los hover del header*/
 /*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
+/*Mixin para los titulos de las secciones*/
+/*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
+/*Mixin que controla los textos que van sobre las imagenes del carrusel*/
 header .navbar {
   background-color: rgba(247, 218, 223, 0.9);
   box-shadow: 0px 2px 5px 0px rgba(255, 123, 123, 0.8);
@@ -74,8 +68,20 @@ header #navbarNav ul li a:active {
   }
 }
 
-body {
-  padding-top: 6.4rem;
+@media only screen and (max-width: 576px) {
+  body {
+    padding-top: 5.4rem;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  body {
+    padding-top: 6.3rem;
+  }
+}
+@media only screen and (min-width: 769px) {
+  body {
+    padding-top: 6.5rem;
+  }
 }
 
 footer {
@@ -125,6 +131,7 @@ footer .footer-contacto a img {
   bottom: 5rem;
   right: 0.5rem;
   transition: all 1s;
+  z-index: 10;
 }
 footer .footer-contacto a img:hover {
   transform: rotate(360deg);
@@ -152,73 +159,178 @@ footer .footer-derechos p a {
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
 /*Mixin que controla los hover del header*/
 /*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
+/*Mixin para los titulos de las secciones*/
+/*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
+/*Mixin que controla los textos que van sobre las imagenes del carrusel*/
 main {
   background-color: rgba(255, 255, 255, 0.7);
 }
 main .carrusel-principal {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 main .carrusel-principal img {
   width: 100%;
-  height: 92.7vh;
+}
+@media only screen and (max-width: 576px) {
+  main .carrusel-principal img {
+    height: 42vh;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  main .carrusel-principal img {
+    height: 58vh;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  main .carrusel-principal img {
+    height: 78vh;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  main .carrusel-principal img {
+    height: 92.7vh;
+  }
+}
+main .carrusel-principal h3 {
+  color: #fff2f4;
+}
+main .carrusel-principal h4 {
+  color: #fff2f4;
+  font-weight: bold;
+}
+@media only screen and (max-width: 576px) {
+  main .carrusel-principal h3 {
+    font-size: 1.5rem;
+  }
+  main .carrusel-principal h4 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+  main .carrusel-principal h3 {
+    font-size: 2rem;
+  }
+  main .carrusel-principal h4 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  main .carrusel-principal h3 {
+    font-size: 4rem;
+  }
+  main .carrusel-principal h4 {
+    font-size: 5.5rem;
+  }
 }
 main .productos-exhibicion {
-  height: 80rem;
+  /*Titulos de los productos en exhibicion*/
 }
 main .productos-exhibicion .row {
-  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .productos-exhibicion .row div {
+  margin: 1rem;
 }
 main .productos-exhibicion h3 {
-  font-size: 6rem;
   color: rgba(0, 0, 0, 0.8);
   background: rgba(255, 192, 203, 0.8);
 }
 main .productos-exhibicion h3:hover {
-  animation: animacion-nombre-categoria 4s;
+  animation: animacion-nombre-categoria 2s;
 }
-@keyframes animacion-nombre-categoria {
-  0% {
-    font-size: 8rem;
+@media only screen and (max-width: 576px) {
+  main .productos-exhibicion h3 {
+    font-size: 4rem;
+  }
+  @keyframes animacion-nombre-categoria {
+    0% {
+      font-size: 4.5rem;
+    }
+  }
+}
+@media only screen and (min-width: 576px) {
+  main .productos-exhibicion h3 {
+    font-size: 6rem;
+    color: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 192, 203, 0.8);
+  }
+  main .productos-exhibicion h3:hover {
+    animation: animacion-nombre-categoria 2s;
+  }
+  @keyframes animacion-nombre-categoria {
+    0% {
+      font-size: 6.5rem;
+    }
   }
 }
 main .productos-exhibicion #ofertas {
-  background-image: url(../images/ofertasHeaderRecortada.jpg);
+  background-image: url(https://i.ibb.co/rkLMkm4/ofertas-Header-Recortada.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
+  height: 38.5rem;
+  width: 45rem;
+}
+main .productos-exhibicion #ofertas:hover {
+  transform: scale(1.01);
 }
 main .productos-exhibicion #liquidaciones {
-  background-image: url(../images/liquidacionesBolsas.jpg);
+  background-image: url(https://i.ibb.co/7pX6SSZ/liquidaciones-Bolsas.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
+  height: 38.5rem;
+  width: 45rem;
+}
+main .productos-exhibicion #liquidaciones:hover {
+  transform: scale(1.01);
 }
 main .productos-exhibicion #arosExhibicion {
-  background-image: url(../images/aroAceroBlanco.jpg);
+  background-image: url(https://i.ibb.co/tLpGx46/aro-Acero-Blanco.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
+  height: 38.5rem;
+  width: 45rem;
+}
+main .productos-exhibicion #arosExhibicion:hover {
+  transform: scale(1.01);
 }
 main .productos-exhibicion #collarExhibicion {
-  background-image: url(../images/cadenaConDije.jpg);
+  background-image: url(https://i.ibb.co/BnPbcGy/cadena-Con-Dije.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
+  height: 38.5rem;
+  width: 45rem;
+}
+main .productos-exhibicion #collarExhibicion:hover {
+  transform: scale(1.01);
 }
 main #clasicos {
   width: 100%;
@@ -227,51 +339,208 @@ main #clasicos h2 {
   background-color: rgba(179, 116, 126, 0.2);
   font-family: "Rokkitt", serif;
   text-align: center;
-  font-size: 5rem;
-  padding: 5rem;
-  margin: 3rem 0;
+}
+@media only screen and (max-width: 576px) {
+  main #clasicos h2 {
+    font-size: 3rem;
+    padding: 2.3rem;
+    margin: 1.7rem 0;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  main #clasicos h2 {
+    font-size: 4.5rem;
+    padding: 3.3rem;
+    margin: 2rem 0;
+  }
+}
+@media only screen and (min-width: 769px) {
+  main #clasicos h2 {
+    font-size: 5rem;
+    padding: 5rem;
+    margin: 3rem 0;
+  }
+}
+main #clasicos h3 {
+  background-color: rgba(179, 116, 126, 0.4);
+  font-family: "Rokkitt", serif;
+  text-align: center;
+  color: rgba(245, 245, 245, 0.952);
+}
+main #clasicos h4 {
+  background-color: rgba(179, 116, 126, 0.5);
+  font-family: "Rokkitt", serif;
+  text-align: center;
+  display: inline;
+}
+@media only screen and (max-width: 576px) {
+  main #clasicos h3 {
+    font-size: 3rem;
+  }
+  main #clasicos h4 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  main #clasicos h3 {
+    font-size: 5rem;
+  }
+  main #clasicos h4 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main #clasicos h3 {
+    font-size: 8rem;
+  }
+  main #clasicos h4 {
+    font-size: 6rem;
+  }
 }
 main #clasicos img {
   width: 100%;
-  height: 60vh;
+}
+@media only screen and (max-width: 576px) {
+  main #clasicos img {
+    height: 43vh;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  main #clasicos img {
+    height: 50vh;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  main #clasicos img {
+    height: 60vh;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  main #clasicos img {
+    height: 70vh;
+  }
 }
 main #tendencias h2 {
   background-color: rgba(179, 116, 126, 0.2);
   font-family: "Rokkitt", serif;
   text-align: center;
-  font-size: 5rem;
-  padding: 5rem;
-  margin: 3rem 0;
+}
+@media only screen and (max-width: 576px) {
+  main #tendencias h2 {
+    font-size: 3rem;
+    padding: 2.3rem;
+    margin: 1.7rem 0;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  main #tendencias h2 {
+    font-size: 4.5rem;
+    padding: 3.3rem;
+    margin: 2rem 0;
+  }
+}
+@media only screen and (min-width: 769px) {
+  main #tendencias h2 {
+    font-size: 5rem;
+    padding: 5rem;
+    margin: 3rem 0;
+  }
 }
 main #tendencias a {
   text-decoration: none;
 }
 main #tendencias a #ultimasTendencias {
-  height: 100vh;
-  background-image: url(../images/ultimaTendenciaVerde.jpg);
+  background-image: url(https://i.ibb.co/yhd5RmM/ultima-Tendencia-Verde.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
 }
 main #tendencias a #ultimasTendencias h3 {
-  font-size: 6rem;
   color: rgba(0, 0, 0, 0.8);
   background: rgba(255, 192, 203, 0.8);
+}
+@media only screen and (max-width: 576px) {
+  main #tendencias a #ultimasTendencias {
+    height: 47vh;
+  }
+  main #tendencias a #ultimasTendencias h3 {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 1272px) {
+  main #tendencias a #ultimasTendencias {
+    height: 50vh;
+  }
+  main #tendencias a #ultimasTendencias h3 {
+    font-size: 3.8rem;
+  }
+}
+@media only screen and (min-width: 1273px) {
+  main #tendencias a #ultimasTendencias {
+    height: 90vh;
+  }
+  main #tendencias a #ultimasTendencias h3 {
+    font-size: 8rem;
+  }
 }
 main #categorias h2 {
   background-color: rgba(179, 116, 126, 0.2);
   font-family: "Rokkitt", serif;
   text-align: center;
-  font-size: 5rem;
-  padding: 5rem;
-  margin: 3rem 0;
+}
+@media only screen and (max-width: 576px) {
+  main #categorias h2 {
+    font-size: 3rem;
+    padding: 2.3rem;
+    margin: 1.7rem 0;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  main #categorias h2 {
+    font-size: 4.5rem;
+    padding: 3.3rem;
+    margin: 2rem 0;
+  }
+}
+@media only screen and (min-width: 769px) {
+  main #categorias h2 {
+    font-size: 5rem;
+    padding: 5rem;
+    margin: 3rem 0;
+  }
 }
 main #categorias img {
   width: 100%;
-  height: 60vh;
+}
+@media only screen and (max-width: 576px) {
+  main #categorias img {
+    height: 43vh;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  main #categorias img {
+    height: 50vh;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  main #categorias img {
+    height: 60vh;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  main #categorias img {
+    height: 70vh;
+  }
+}
+main #categorias h4 {
+  display: inline;
+  font-size: 6rem;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 192, 203, 0.8);
 }
 main #ubicacion {
   margin: 1rem 0;
@@ -280,35 +549,83 @@ main #ubicacion h2 {
   background-color: rgba(179, 116, 126, 0.2);
   font-family: "Rokkitt", serif;
   text-align: center;
-  font-size: 5rem;
-  padding: 5rem;
-  margin: 3rem 0;
+}
+@media only screen and (max-width: 576px) {
+  main #ubicacion h2 {
+    font-size: 3rem;
+    padding: 2.3rem;
+    margin: 1.7rem 0;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  main #ubicacion h2 {
+    font-size: 4.5rem;
+    padding: 3.3rem;
+    margin: 2rem 0;
+  }
+}
+@media only screen and (min-width: 769px) {
+  main #ubicacion h2 {
+    font-size: 5rem;
+    padding: 5rem;
+    margin: 3rem 0;
+  }
 }
 main #ubicacion a {
   text-decoration: none;
 }
 main #ubicacion a #ubicacionImagenMapa {
-  height: 50vh;
-  background-image: url(../images/mapaubicacion.jpg);
+  background-image: url(https://i.ibb.co/m8jr66y/mapaubicacion.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
 }
 main #ubicacion a #ubicacionImagenMapa h3 {
-  font-size: 6rem;
   color: rgba(0, 0, 0, 0.8);
   background: rgba(255, 192, 203, 0.8);
+}
+@media only screen and (max-width: 576px) {
+  main #ubicacion a #ubicacionImagenMapa {
+    height: 35vh;
+  }
+  main #ubicacion a #ubicacionImagenMapa h3 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 1272px) {
+  main #ubicacion a #ubicacionImagenMapa {
+    height: 43vh;
+  }
+  main #ubicacion a #ubicacionImagenMapa h3 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1273px) {
+  main #ubicacion a #ubicacionImagenMapa {
+    height: 50vh;
+  }
+  main #ubicacion a #ubicacionImagenMapa h3 {
+    font-size: 6rem;
+  }
 }
 
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
 /*Mixin que controla los hover del header*/
 /*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
+/*Mixin para los titulos de las secciones*/
+/*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
+/*Mixin que controla los textos que van sobre las imagenes del carrusel*/
 main .categorias-presentacion .categorias-titulo {
   background-image: url(../images/categoriaHeader.jpg);
   background-position: center;
@@ -317,6 +634,7 @@ main .categorias-presentacion .categorias-titulo {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
   width: 100%;
   height: 23vh;
 }
@@ -355,15 +673,38 @@ main .categorias-productos figure p {
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
 /*Mixin que controla los hover del header*/
 /*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
+/*Mixin para los titulos de las secciones*/
+/*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
-main .clasicos-presentacion {
-  height: 66vh;
-}
+/*Mixin que controla los textos que van sobre las imagenes del carrusel*/
 main .clasicos-presentacion img {
   width: 100%;
-  height: 65vh;
+}
+@media only screen and (max-width: 576px) {
+  main .clasicos-presentacion img {
+    height: 40vh;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  main .clasicos-presentacion img {
+    height: 50vh;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  main .clasicos-presentacion img {
+    height: 60vh;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  main .clasicos-presentacion img {
+    height: 70vh;
+  }
 }
 main .clasicos-productos .clasicos-titulo {
   background-image: url(../images/bellezaHeader.jpg);
@@ -373,6 +714,7 @@ main .clasicos-productos .clasicos-titulo {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
   width: 100%;
   height: 23vh;
 }
@@ -401,9 +743,16 @@ main .clasicos-productos figure p {
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
 /*Mixin que controla los hover del header*/
 /*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
+/*Mixin para los titulos de las secciones*/
+/*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
+/*Mixin que controla los textos que van sobre las imagenes del carrusel*/
 main .combos-presentacion {
   background-image: url(../images/bellaHeader.jpg);
   background-position: center;
@@ -412,6 +761,7 @@ main .combos-presentacion {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
   width: 100%;
   height: 23vh;
 }
@@ -440,26 +790,72 @@ main .combos-productos figure p {
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
 /*Mixin que controla los hover del header*/
 /*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
+/*Mixin para los titulos de las secciones*/
+/*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
-main .ingresos-presentacion {
-  height: 66vh;
-}
+/*Mixin que controla los textos que van sobre las imagenes del carrusel*/
 main .ingresos-presentacion img {
   width: 100%;
-  height: 65vh;
+}
+@media only screen and (max-width: 576px) {
+  main .ingresos-presentacion img {
+    height: 40vh;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  main .ingresos-presentacion img {
+    height: 50vh;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  main .ingresos-presentacion img {
+    height: 60vh;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  main .ingresos-presentacion img {
+    height: 70vh;
+  }
 }
 main .ingresos-presentacion h5 {
   display: inline;
   background-color: rgba(179, 116, 126, 0.4);
-  font-size: 5rem;
   color: #ffe2e2;
 }
 main .ingresos-presentacion p {
   background-color: rgba(179, 116, 126, 0.4);
-  font-size: 4rem;
   color: #ffe2e2;
+  font-weight: bold;
+}
+@media only screen and (max-width: 576px) {
+  main .ingresos-presentacion h5 {
+    font-size: 1.5rem;
+  }
+  main .ingresos-presentacion p {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+  main .ingresos-presentacion h5 {
+    font-size: 4rem;
+  }
+  main .ingresos-presentacion p {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  main .ingresos-presentacion h5 {
+    font-size: 5rem;
+  }
+  main .ingresos-presentacion p {
+    font-size: 4rem;
+  }
 }
 main .ingresos-productos .ingresos-titulo {
   background-image: url(../images/ultimaTendenciaHeader.jpg);
@@ -469,6 +865,7 @@ main .ingresos-productos .ingresos-titulo {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
   width: 100%;
   height: 23vh;
 }
@@ -499,7 +896,21 @@ main .ingresos-productos figure p {
 /*background descripciones*/
 main .contacto-presentacion img {
   width: 100%;
-  height: 70vh;
+}
+@media only screen and (max-width: 576px) {
+  main .contacto-presentacion img {
+    height: 40vh;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  main .contacto-presentacion img {
+    height: 50vh;
+  }
+}
+@media only screen and (min-width: 769px) {
+  main .contacto-presentacion img {
+    height: 60vh;
+  }
 }
 main .contacto-form .contacto-titulo {
   width: 100%;
@@ -547,9 +958,16 @@ main .contacto-form form button {
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
 /*Mixin que controla los hover del header*/
 /*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
+/*Mixin para los titulos de las secciones*/
+/*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
+/*Mixin que controla los textos que van sobre las imagenes del carrusel*/
 main .ubicacion-principal .ubicacion-titulo {
   background-image: url(../images/mujerHeader.jpg);
   background-position: center;
@@ -558,6 +976,7 @@ main .ubicacion-principal .ubicacion-titulo {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
   width: 100%;
   height: 23vh;
 }

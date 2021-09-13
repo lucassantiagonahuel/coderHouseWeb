@@ -1,3 +1,7 @@
+@import '../base/listas';
+@import '../base/variables';
+@import '../base/maps';
+
 /*Mixin que controla los hover del header*/
 @mixin header-nav($transf) {
     background-color: rgba(244, 128, 177, 0.5);
@@ -14,10 +18,157 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1s;
 
     @if $origen=='secciones-ventas' {
         width: 100%;
         height: 23vh;
+    }
+
+    @else if($origen=='index-exhibicion') {
+        height: 38.5rem;
+        width: 45rem;
+
+        &:hover {
+            transform: scale(1.01);
+        }
+    }
+
+}
+
+/*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
+@mixin titulos-prod-exhibicion {
+
+
+    h3 {
+        color: rgba(0, 0, 0, 0.8);
+        background: $colores-descripciones;
+
+        &:hover {
+            animation: animacion-nombre-categoria 2s;
+        }
+    }
+
+    @media only screen and (max-width:576px) {
+
+        h3 {
+            font-size: 4rem;
+
+            @keyframes animacion-nombre-categoria {
+                0% {
+                    font-size: 4.5rem;
+                }
+
+
+            }
+        }
+    }
+
+    @media only screen and (min-width:576px) {
+
+        h3 {
+            font-size: 6rem;
+            color: rgba(0, 0, 0, 0.8);
+            background: $colores-descripciones;
+
+            &:hover {
+                animation: animacion-nombre-categoria 2s;
+            }
+
+            @keyframes animacion-nombre-categoria {
+                0% {
+                    font-size: 6.5rem;
+                }
+
+
+            }
+        }
+    }
+}
+
+
+/*Mixin para los titulos de las secciones*/
+@mixin titulos-secciones {
+
+    h2 {
+        background-color: nth($colores-titulos, 2);
+        font-family: $font-title;
+        text-align: center;
+    }
+
+    @media only screen and (max-width:576px) {
+        h2 {
+            font-size: 3rem;
+            padding: 2.3rem;
+            margin: 1.7rem 0;
+        }
+    }
+
+    @media only screen and (min-width:577px) and (max-width:768px) {
+        h2 {
+            font-size: 4.5rem;
+            padding: 3.3rem;
+            margin: 2rem 0;
+        }
+    }
+
+    @media only screen and (min-width:769px) {
+        h2 {
+            font-size: $font-size-title;
+            padding: 5rem;
+            margin: 3rem 0;
+        }
+    }
+}
+
+/*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
+@mixin clasicos-descripciones($origen) {
+    @if $origen=='clasico-descr' {
+        width: 100%;
+
+        h3 {
+            background-color: rgba(179, 116, 126, 0.4);
+            font-family: $font-title;
+            text-align: center;
+            color: rgba(245, 245, 245, 0.952);
+        }
+
+        h4 {
+            background-color: rgba(179, 116, 126, 0.5);
+            font-family: $font-title;
+            text-align: center;
+            display: inline;
+        }
+
+        @media only screen and (max-width:576px) {
+            h3 {
+                font-size: 3rem;
+            }
+
+            h4 {
+                font-size: 2rem;
+            }
+        }
+
+        @media only screen and (min-width:577px) and (max-width:768px) {
+            h3 {
+                font-size: 5rem;
+            }
+
+            h4 {
+                font-size: 4rem;
+            }
+        }
+
+        @media only screen and (min-width:768px) {
+            h3 {
+                font-size: 8rem;
+            }
+
+            h4 {
+                font-size: 6rem;
+            }
+        }
     }
 }
 
@@ -25,16 +176,149 @@
 @mixin carrusel-tipo($tipo) {
     @if $tipo=='carrusel-principal' {
         width: 100%;
-        height: 92.7vh;
+
+        @media only screen and (max-width:576px) {
+            height: 42vh;
+        }
+
+        @media only screen and (min-width:577px) and (max-width:768px) {
+            height: 58vh;
+        }
+
+        @media only screen and (min-width:769px) and (max-width:1024px) {
+            height: 78vh;
+        }
+
+        @media only screen and (min-width:1025px) {
+            height: 92.7vh;
+        }
     }
 
     @else if $tipo=='carrusel-index-secciones' {
         width: 100%;
-        height: 60vh;
+
+        @media only screen and (max-width:576px) {
+            height: 43vh;
+        }
+
+        @media only screen and (min-width:577px) and (max-width:768px) {
+            height: 50vh;
+        }
+
+        @media only screen and (min-width:769px) and (max-width:1024px) {
+            height: 60vh;
+        }
+
+        @media only screen and (min-width:1025px) {
+            height: 70vh;
+        }
     }
 
     @else {
         width: 100%;
-        height: 65vh;
+
+        @media only screen and (max-width:576px) {
+            height: 40vh;
+        }
+
+        @media only screen and (min-width:577px) and (max-width:768px) {
+            height: 50vh;
+        }
+
+        @media only screen and (min-width:769px) and (max-width:1024px) {
+            height: 60vh;
+        }
+
+        @media only screen and (min-width:1025px) {
+            height: 70vh;
+        }
+    }
+}
+
+/*Mixin que controla los textos que van sobre las imagenes del carrusel*/
+@mixin descr-carrusel($origen) {
+    @if ($origen=='descr-carrusel-principal') {
+        h3 {
+            color: rgba(255, 242, 244, 1);
+        }
+
+        h4 {
+            color: rgba(255, 242, 244, 1);
+            font-weight: bold;
+        }
+
+        @media only screen and (max-width:576px) {
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            h4 {
+                font-size: 2rem;
+            }
+        }
+
+        @media only screen and (min-width:577px) and (max-width:1024px) {
+            h3 {
+                font-size: 2rem;
+            }
+
+            h4 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media only screen and (min-width:1025px) {
+            h3 {
+                font-size: 4rem;
+            }
+
+            h4 {
+                font-size: 5.5rem;
+            }
+        }
+    }
+
+    @else if ($origen=='descr-secciones-ventas') {
+        h5 {
+            display: map-get($descripcion-carrusel-ingresos, displ-titulo);
+            background-color: map-get($descripcion-carrusel-ingresos, bg-color-ingresos);
+            color: map-get($descripcion-carrusel-ingresos, color-fuente);
+        }
+
+        p {
+            background-color: map-get($descripcion-carrusel-ingresos, bg-color-ingresos);
+            color: map-get($descripcion-carrusel-ingresos, color-fuente);
+            font-weight: bold;
+        }
+
+        @media only screen and (max-width:576px) {
+            h5 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media only screen and (min-width:577px) and (max-width:1024px) {
+            h5 {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 3rem;
+            }
+        }
+
+        @media only screen and (min-width:1025px) {
+            h5 {
+                font-size: map-get($descripcion-carrusel-ingresos, tam-titulo-fuente);
+            }
+
+            p {
+                font-size: map-get($descripcion-carrusel-ingresos, tam-desc-fuente);
+            }
+        }
     }
 }

@@ -5,19 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="En AniBijou somos vendedores directos de bijouterie de acero,enchapados,plata y accesorios de moda para damas y caballeros con locales a la calle en la Ciudad de Gualeguaychu desde el año 2015.">
-  <meta name="keywords" content="AniBijou, bijouterie, regaleria, acero, enchapados, collares, aros, pulseras, moda, bolsos, mochilas, carteras, billeteras, damas, caballeros, niños, ropa, gualeguaychu, entreRios, accesorios">
+  <meta name="description"
+    content="En AniBijou somos vendedores directos de bijouterie de acero,enchapados,plata y accesorios de moda para damas y caballeros con locales a la calle en la Ciudad de Gualeguaychu desde el año 2015.">
+  <meta name="keywords"
+    content="AniBijou, bijouterie, regaleria, acero, enchapados, collares, aros, pulseras, moda, bolsos, mochilas, carteras, billeteras, damas, caballeros, niños, ropa, gualeguaychu, entreRios, accesorios">
   <!-- Protocolo Open Graph -->
   <meta property="og:title" content="Ani Bijou | Bijouterie - Moda y acero quirurgico ">
-  <meta property="og:description" content="En AniBijou somos vendedores directos de bijouterie de acero,enchapados,plata y accesorios de moda para damas y caballeros con locales a la calle en la Ciudad de Gualeguaychu desde el año 2015.">
+  <meta property="og:description"
+    content="En AniBijou somos vendedores directos de bijouterie de acero,enchapados,plata y accesorios de moda para damas y caballeros con locales a la calle en la Ciudad de Gualeguaychu desde el año 2015.">
   <meta property="og:image" content="https://i.ibb.co/0YtRgkd/Ani-Bijou-Open-Graph.png">
   <meta property="og:author" content="Lucas Nahuel">
   <!-- Favicon Anibijou -->
-  <link rel="shortcut icon" type="image/x-icon" href="images/icon-aniBijou.png" >
+  <link rel="shortcut icon" type="image/x-icon" href="images/icon-aniBijou.png">
   <!-- Linkeamos a boostrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <!-- Linkeamos al CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <!-- Link a iconos -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -71,14 +75,28 @@
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/ultimasTendenciasPresentacion.jpg" class="d-block w-100"
+            <img src="https://i.ibb.co/KVPCnHc/ultimas-Tendencias-Presentacion.jpg" class="d-block w-100"
               alt="Mujer con la ultima tendencia en moda">
+            <div class="carousel-caption">
+              <h3>Encontra Lo Ultimo Para Vos</h3>
+              <h4>Redescubrite En Moda Con Las Ultimas Novedades</h4>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="images/cuotasTarjetas.jpg" class="d-block w-100" alt="Mujer con tarjeta de credito">
+            <img src="https://i.ibb.co/cgb26fg/cuotas-Tarjetas.jpg" class="d-block w-100"
+              alt="Mujer con tarjeta de credito">
+            <div class="carousel-caption">
+              <h3>Con Tarjeta De Credito Visa Y Mastercard</h3>
+              <h4>3 Cuotas Sin Interes</h4>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="images//descuentoCarrusel.jpg" class="d-block w-100" alt="Mujer aplicando a descuentos">
+            <img src="https://i.ibb.co/G2dMxK4/descuento-Carrusel.jpg" class="d-block w-100"
+              alt="Mujer aplicando a descuentos">
+            <div class="carousel-caption">
+              <h3>Pagando por deposito o transferencia bancaria</h3>
+              <h4>10% OFF A Partir de $5.000</h4>
+            </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -94,20 +112,18 @@
       </div>
     </section>
     <!-- Seccion con imagenes y una pequeña descripcion sobre la imagen referida a su contenido -->
-    <section class="container productos-exhibicion">
+    <section class="container-fluid productos-exhibicion">
       <div class="row py-3">
-        <div class="col-lg-6 col-md-12" id="ofertas">
+        <div class="col-lg-3 col-md-6 col-sm-12 " id="ofertas">
           <h3>Ofertas</h3>
         </div>
-        <div class="col-lg-6 col-md-12" id="liquidaciones">
+        <div class="col-lg-3 col-md-6 col-sm-12" id="liquidaciones">
           <h3>Liquidaciones</h3>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 col-md-12" id="arosExhibicion">
+        <div class="col-lg-3 col-md-6 col-sm-12" id="arosExhibicion">
           <h3>Aros</h3>
         </div>
-        <div class="col-lg-6 col-md-12" id="collarExhibicion">
+        <div class="col-lg-3 col-md-6 col-sm-12" id="collarExhibicion">
           <h3>Collares</h3>
         </div>
       </div>
@@ -129,24 +145,25 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="images/anillosAcero.jpg" class="d-block w-100" alt="Anillos dama diferentes tipos">
-              <div class="carousel-caption d-none d-md-block">
-                <h2>Anillo Dama</h2>
-                <h3>$300</h3>
+              <img src="https://i.ibb.co/6W7XdLY/anillos-Acero.jpg" class="d-block w-100"
+                alt="Anillos dama diferentes tipos">
+              <div class="carousel-caption ">
+                <h3>Anillo Dama</h3>
+                <h4>$300</h4>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="images/moñoPelo.jpg" class="d-block w-100" alt="Moño de pelo">
-              <div class="carousel-caption d-none d-md-block">
-                <h2>Moño pelo dama</h2>
-                <h3>$500</h3>
+              <img src="https://i.ibb.co/QbmyQnH/mo-oPelo.jpg" class="d-block w-100" alt="Moño de pelo">
+              <div class="carousel-caption ">
+                <h3>Moño dama</h3>
+                <h4>$500</h4>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="images/mujercombo2.jpg" class="d-block w-100" alt="Bolso de dama">
-              <div class="carousel-caption d-none d-md-block">
-                <h2>Bolso dama</h2>
-                <h3>$1800</h3>
+              <img src="https://i.ibb.co/ysCfTkT/mujercombo2.jpg" class="d-block w-100" alt="Bolso de dama">
+              <div class="carousel-caption ">
+                <h3>Bolso dama</h3>
+                <h4>$1800</h4>
               </div>
             </div>
           </div>
@@ -164,13 +181,13 @@
       </div>
     </section>
     <!-- Seccion que va a contener una imagen con una descripcion sobre ella de la ultima tendencia de la epoca -->
-    <section id="tendencias">
+    <section id="tendencias" class="container-fluid">
       <!-- Titulo de la seccion -->
-      <h2>Conoce las ultimas tendencias!!</h2>
+      <h2>Ultimas tendencias!!</h2>
       <!--Imagen con minima descripcion de la seccion -->
       <a href="ultimosIngresos.html" target="_blank" title="Mira las ultimas tendencias del mercado!!">
         <div id="ultimasTendencias">
-          <h3>Mira las ultimas tendencias en moda para vos!</h3>
+          <h3>Las ultimas tendencias para vos!</h3>
         </div>
       </a>
     </section>
@@ -183,16 +200,38 @@
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="images/abridoresDama.jpg" class="d-block w-100" alt="Abridor de aros">
+              <a href="#">
+                <img src="https://i.ibb.co/tmw8JPq/abridores-Dama.jpg" class="d-block w-100" alt="Abridor de aros">
+                <div class="carousel-caption ">
+                  <h4>Aros</h4>
+                </div>
+              </a>
             </div>
             <div class="carousel-item">
-              <img src="images/anillosAcero.jpg" class="d-block w-100" alt="Anillos de acero">
+              <a href="categorias.html#anillos" target="_blank">
+                <img src="https://i.ibb.co/6W7XdLY/anillos-Acero.jpg" class="d-block w-100" alt="Anillos de acero">
+                <div class="carousel-caption ">
+                  <h4>Anillos</h4>
+                </div>
+              </a>
             </div>
             <div class="carousel-item">
-              <img src="images/arosArgollaFinal.jpg" class="d-block w-100" alt="Aros argolla dorados">
+              <a href="#">
+                <img src="https://i.ibb.co/PjqPZ9c/aros-Argolla-Final.jpg" class="d-block w-100"
+                  alt="Aros argolla dorados">
+                <div class="carousel-caption ">
+                  <h4>Tobilleras</h4>
+                </div>
+              </a>
             </div>
             <div class="carousel-item">
-              <img src="images/pulseraAceroVariosModelos.jpg" class="d-block w-100" alt="Pulsera de acero">
+              <a href="#">
+                <img src="https://i.ibb.co/5hrXB7V/pulsera-Acero-Varios-Modelos.jpg" class="d-block w-100"
+                  alt="Pulsera de acero">
+                <div class="carousel-caption ">
+                  <h4>Pulseras</h4>
+                </div>
+              </a>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
@@ -297,6 +336,10 @@
       </p>
     </section>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
     integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
   </script>

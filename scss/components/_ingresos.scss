@@ -7,24 +7,13 @@
 
 main {
     .ingresos-presentacion {
-        height: 66vh;
+        //height: 66vh;
 
         img {
             @include carrusel-tipo('carrusel-secciones-ventas');
         }
 
-        h5 {
-            display: map-get($descripcion-carrusel-ingresos, displ-titulo);
-            background-color: map-get($descripcion-carrusel-ingresos, bg-color-ingresos);
-            font-size: map-get($descripcion-carrusel-ingresos, tam-titulo-fuente);
-            color: map-get($descripcion-carrusel-ingresos, color-fuente);
-        }
-
-        p {
-            background-color: map-get($descripcion-carrusel-ingresos, bg-color-ingresos);
-            font-size: map-get($descripcion-carrusel-ingresos, tam-desc-fuente);
-            color: map-get($descripcion-carrusel-ingresos, color-fuente);
-        }
+        @include descr-carrusel('descr-secciones-ventas');
     }
 
     .ingresos-productos {
