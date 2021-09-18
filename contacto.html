@@ -27,7 +27,7 @@
   <title>Contacto | AniBijou - Bijouterie</title>
 </head>
 
-<body>
+<body class="container-fluid">
   <!-- El logo y la barra de navegacion es la misma para todo el sistema -->
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -71,7 +71,7 @@
   <main>
     <!-- Imagen referencial a enviar un mensaje o algo referido a la comunicacion -->
     <section class="contacto-presentacion">
-      <img src="images/contactoFondo.jpg" alt="Imagen de un dispositivo enviando emails">
+      <img src="https://i.ibb.co/y4Tw1JK/contacto-Fondo.jpg" alt="Imagen de un dispositivo enviando emails">
     </section>
     <!-- Titulo mediano haciendo alusion a que envie su consulta, un pequeño texto con datos de contacto como cel/email y un formulario para que envie su consulta -->
     <section class="contacto-form py-3">
@@ -86,18 +86,18 @@
       </p>
       <!-- Formulario de contacto -->
       <div class="container">
-        <form class="row py-3">
+        <form class="row py-3" id="form">
           <div class="col-12 py-3">
-            <input type="text" class="form-control" placeholder="Tu nombre y apellido">
+            <input type="text" class="form-control" placeholder="Tu nombre y apellido" id="nombre" name="nombre">
           </div>
           <div class="col-12 py-3">
-            <input type="number" class="form-control" placeholder="Tu telefono">
+            <input type="number" class="form-control" placeholder="Tu telefono" id="telefono" name="telefono">
           </div>
           <div class="col-12 py-3">
-            <input type="email" class="form-control" placeholder="Tu email">
+            <input type="email" class="form-control" placeholder="Tu email" id="email" name="email">
           </div>
           <div class="col-12 py-3">
-            <textarea class="form-control form-mensaje" rows="10" cols="30" placeholder="Tu mensaje"></textarea>
+            <textarea class="form-control form-mensaje" rows="10" cols="30" placeholder="Tu mensaje" id="mensaje" name="mensaje"></textarea>
           </div>
           <div class="col-12 py-3">
             <button type="submit">Enviar</button>
@@ -187,6 +187,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
     integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
   </script>
+  <script src = "https://smtpjs.com/v3/smtp.js">
+  </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+  <script src="./js/envio.js"></script>
+  <script src="./js/smtp.js"></script>
 </body>
 
 </html>

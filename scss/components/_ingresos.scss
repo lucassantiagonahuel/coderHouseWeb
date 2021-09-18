@@ -19,7 +19,7 @@ main {
     .ingresos-productos {
 
         .ingresos-titulo {
-            @include imagenes-exhibicion(url(../images/ultimaTendenciaHeader.jpg), 'secciones-ventas');
+            @include imagenes-exhibicion(url(https://i.ibb.co/Nm7NsvP/ultima-Tendencia-Header.jpg), 'secciones-ventas');
 
             h2 {
                 background-color: nth($colores-titulos, 2);

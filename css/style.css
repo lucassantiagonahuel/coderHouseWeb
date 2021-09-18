@@ -1,7 +1,34 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
 @import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
 html {
   font-size: 62.5%;
 }
@@ -141,6 +168,7 @@ footer .scrool {
   position: fixed;
   bottom: 0.05rem;
   right: 0.05rem;
+  z-index: 10;
 }
 footer .footer-derechos {
   border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
@@ -239,6 +267,9 @@ main .productos-exhibicion .row {
 }
 main .productos-exhibicion .row div {
   margin: 1rem;
+}
+main .productos-exhibicion .row div a {
+  text-decoration: none;
 }
 main .productos-exhibicion h3 {
   color: rgba(0, 0, 0, 0.8);
@@ -627,7 +658,7 @@ main #ubicacion a #ubicacionImagenMapa h3 {
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
 /*Mixin que controla los textos que van sobre las imagenes del carrusel*/
 main .categorias-presentacion .categorias-titulo {
-  background-image: url(../images/categoriaHeader.jpg);
+  background-image: url(https://i.ibb.co/51b1BmQ/categoria-Header.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -707,7 +738,7 @@ main .clasicos-presentacion img {
   }
 }
 main .clasicos-productos .clasicos-titulo {
-  background-image: url(../images/bellezaHeader.jpg);
+  background-image: url(https://i.ibb.co/6n7b1T7/belleza-Header.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -754,7 +785,7 @@ main .clasicos-productos figure p {
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
 /*Mixin que controla los textos que van sobre las imagenes del carrusel*/
 main .combos-presentacion {
-  background-image: url(../images/bellaHeader.jpg);
+  background-image: url(https://i.ibb.co/SDS8dJ2/bella-Header.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -858,7 +889,7 @@ main .ingresos-presentacion p {
   }
 }
 main .ingresos-productos .ingresos-titulo {
-  background-image: url(../images/ultimaTendenciaHeader.jpg);
+  background-image: url(https://i.ibb.co/Nm7NsvP/ultima-Tendencia-Header.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -915,7 +946,7 @@ main .contacto-presentacion img {
 main .contacto-form .contacto-titulo {
   width: 100%;
   height: 22vh;
-  background-image: url(../images/emailHeader.jpg);
+  background-image: url(https://i.ibb.co/p2ngNmV/email-Header.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -969,7 +1000,7 @@ main .contacto-form form button {
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
 /*Mixin que controla los textos que van sobre las imagenes del carrusel*/
 main .ubicacion-principal .ubicacion-titulo {
-  background-image: url(../images/mujerHeader.jpg);
+  background-image: url(https://i.ibb.co/B23R0CX/mujer-Header.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

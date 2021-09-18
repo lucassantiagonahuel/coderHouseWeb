@@ -15,7 +15,7 @@ main {
     .clasicos-productos {
 
         .clasicos-titulo {
-            @include imagenes-exhibicion(url(../images/bellezaHeader.jpg), 'secciones-ventas');
+            @include imagenes-exhibicion(url(https://i.ibb.co/6n7b1T7/belleza-Header.jpg), 'secciones-ventas');
 
             h2 {
                 background-color: nth($colores-titulos, 2);

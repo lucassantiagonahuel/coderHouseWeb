@@ -7,7 +7,7 @@ main {
     .categorias-presentacion {
 
         .categorias-titulo {
-            @include imagenes-exhibicion(url(../images/categoriaHeader.jpg), 'secciones-ventas');
+            @include imagenes-exhibicion(url(https://i.ibb.co/51b1BmQ/categoria-Header.jpg), 'secciones-ventas');
 
             h3 {
                 background-color: nth($colores-titulos, 2);

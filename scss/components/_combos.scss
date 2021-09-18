@@ -12,7 +12,7 @@ main {
             font-size: $font-size-title;
         }
 
-        @include imagenes-exhibicion(url(../images/bellaHeader.jpg), 'secciones-ventas');
+        @include imagenes-exhibicion(url(https://i.ibb.co/SDS8dJ2/bella-Header.jpg), 'secciones-ventas');
     }
 
     .combos-productos {
