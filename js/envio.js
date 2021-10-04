@@ -37,7 +37,7 @@ function sender(nombre, telefono, email, mensaje) {
                 <p>Mensaje: <b>${mensaje}</b></p>
                 `
     }).then(
-        message => swal("Correo enviado exitosamente", "en breve nos pondremos en contacto", "success")
+        message => swal("Correo enviado exitosamente", "En breve nos pondremos en contacto", "success")
         //Se utiliza la libreria sweetAlert para generar ventanas emergentes tipo popup, se cargo el cdn en el index para mostrar funcionamiento
         //mas info en https://sweetalert.js.org/
     )

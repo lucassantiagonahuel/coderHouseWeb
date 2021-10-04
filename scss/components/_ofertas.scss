@@ -6,7 +6,7 @@
 
 
 main {
-    .ingresos-presentacion {
+    .ofertas-presentacion {
 
         img {
             @include carrusel-tipo('carrusel-secciones-ventas');
@@ -15,10 +15,10 @@ main {
         @include descr-carrusel('descr-secciones-ventas');
     }
 
-    .ingresos-productos {
+    .ofertas-productos {
 
-        .ingresos-titulo {
-            @include imagenes-exhibicion(url(https://i.ibb.co/Nm7NsvP/ultima-Tendencia-Header.jpg), 'secciones-ventas');
+        .ofertas-titulo {
+            @include imagenes-exhibicion(url(https://i.ibb.co/B23R0CX/mujer-Header.jpg), 'secciones-ventas');
 
             @include titulos-secciones-internas;  
 

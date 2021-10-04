@@ -3,30 +3,27 @@
 @import '../base/mixins';
 @import '../base/maps';
 
-
-
 main {
-    .ingresos-presentacion {
+    .liquidaciones-presentacion {
+        //height: 66vh;
 
         img {
             @include carrusel-tipo('carrusel-secciones-ventas');
         }
-
         @include descr-carrusel('descr-secciones-ventas');
     }
 
-    .ingresos-productos {
+    .liquidaciones-productos {
+ 
+        .liquidaciones-titulo {
+            @include imagenes-exhibicion(url(https://i.ibb.co/51b1BmQ/categoria-Header.jpg), 'secciones-ventas');
 
-        .ingresos-titulo {
-            @include imagenes-exhibicion(url(https://i.ibb.co/Nm7NsvP/ultima-Tendencia-Header.jpg), 'secciones-ventas');
-
-            @include titulos-secciones-internas;  
-
+            @include titulos-secciones-internas;
         }
+
 
         figure {
             @include productos-descr;
         }
     }
-
 }

@@ -26,14 +26,93 @@
     }
 
     @else if($origen=='index-exhibicion') {
-        height: 38.5rem;
+        height: 35vh;
         width: 45rem;
 
         &:hover {
             transform: scale(1.01);
         }
+        @media only screen and (min-width: 576px) and (max-width:767px){
+            height: 60vh;
+        }
     }
+    @else if($origen=='index-exhibicion-tendencias'){
+        h3 {
+            color: $colores-textos-descr;
+            background: $colores-descripciones;
+        }
 
+        @media only screen and (max-width:576px) {
+            height: 47vh;
+
+            h3 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media only screen and (min-width:577px) and (max-width:767px) {
+            height: 75vh;
+
+            h3 {
+                font-size: 3.6rem;
+            }
+        }
+
+        @media only screen and (min-width:768px) and (max-width:1272px) {
+            height: 75vh;
+
+            h3 {
+                font-size: 4.8rem;
+            }
+        }
+
+        @media only screen and (min-width:1273px) {
+            height: 90vh;
+
+            h3 {
+                font-size: 8rem;
+            }
+        }
+    }
+    @else if($origen=='index-exhibicion-ubicacion'){
+        h3 {
+            color: $colores-textos-descr;
+            background: $colores-descripciones;
+        }
+
+        @media only screen and (max-width:576px) {
+            height: 35vh;
+
+            h3 {
+                font-size: 2rem;
+            }
+        }
+
+        @media only screen and (min-width:577px) and (max-width:767px) {
+            height: 45vh;
+
+            h3 {
+                font-size: 3rem;
+            }
+        }
+
+        @media only screen and (min-width:768px) and (max-width:1272px) {
+            height: 47vh;
+
+            h3 {
+                font-size: 4.3rem;
+            }
+        }
+
+
+        @media only screen and (min-width:1273px) {
+            height: 50vh;
+
+            h3 {
+                font-size: 6rem;
+            }
+        }
+    }
 }
 
 /*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
@@ -172,41 +251,68 @@
     }
 }
 
+/*Mixin para los titulos de las categorias en el carrusel del index principal*/
+@mixin categorias-descr-index {
+    h4 {
+        display: inline;
+        color: $colores-textos-descr;
+        background: $colores-descripciones;
+    }
+
+    @media only screen and (max-width:576px) {
+        h4 {
+            font-size: 3.5rem;
+        }
+    }
+    @media only screen and (min-width:577px) and (max-width:767px){
+        h4{
+            font-size: 4.5rem;
+        }
+    }
+
+    @media only screen and (min-width:768px) {
+        h4 {
+            font-size: 6rem;
+        }
+    }
+
+}
+
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
 @mixin carrusel-tipo($tipo) {
     @if $tipo=='carrusel-principal' {
         width: 100%;
 
-        @media only screen and (max-width:576px) {
-            height: 42vh;
-        }
+        // @media only screen and (max-width:576px) {
+        //     height: 42vh;
+        // }
 
-        @media only screen and (min-width:577px) and (max-width:768px) {
-            height: 58vh;
-        }
+        // @media only screen and (min-width:577px) and (max-width:768px) {
+        //     height: 30vh;
+        // }
 
-        @media only screen and (min-width:769px) and (max-width:1024px) {
-            height: 78vh;
-        }
+        // @media only screen and (min-width:769px) and (max-width:1024px) {
+        //     height: 35vh;
+        // }
 
-        @media only screen and (min-width:1025px) {
-            height: 92.7vh;
-        }
+        // @media only screen and (min-width:1025px) {
+        //     height: 92.7vh;
+        // }
     }
 
     @else if $tipo=='carrusel-index-secciones' {
         width: 100%;
 
         @media only screen and (max-width:576px) {
-            height: 43vh;
+            //height: 40vh;
         }
 
         @media only screen and (min-width:577px) and (max-width:768px) {
-            height: 50vh;
+            //height: 50vh;
         }
 
         @media only screen and (min-width:769px) and (max-width:1024px) {
-            height: 60vh;
+            //height: 60vh;
         }
 
         @media only screen and (min-width:1025px) {
@@ -218,15 +324,15 @@
         width: 100%;
 
         @media only screen and (max-width:576px) {
-            height: 40vh;
+            //height: 40vh;
         }
 
         @media only screen and (min-width:577px) and (max-width:768px) {
-            height: 50vh;
+            //height: 50vh;
         }
 
         @media only screen and (min-width:769px) and (max-width:1024px) {
-            height: 60vh;
+            //height: 60vh;
         }
 
         @media only screen and (min-width:1025px) {
@@ -318,6 +424,93 @@
 
             p {
                 font-size: map-get($descripcion-carrusel-ingresos, tam-desc-fuente);
+            }
+        }
+    }
+}
+
+/*Mixin para los titulos de las secciones que van sobre la imagen de fondo de las mismas*/
+@mixin titulos-secciones-internas {
+    h2 {
+        background-color: nth($colores-titulos, 2);
+        font-family: $font-title;
+        text-align: center;
+        font-size: $font-size-title;
+    }
+}
+
+/*Mixin que controlara las imagenes,descripciones y precios de productos*/
+@mixin productos-descr {
+    img {
+        width: 100%;
+        height: 35vh;
+    }
+
+    h5 {
+        text-align: map-get($descripcion-productos, posicion-titulo);
+        font-size: map-get($descripcion-productos, tam-fuente-titulo);
+        color: map-get($descripcion-productos, color-fuente-titulo);
+    }
+
+    p {
+        text-align: map-get($descripcion-productos, posicion-desc);
+        font-size: map-get($descripcion-productos, tam-fuente-descr);
+        color: map-get($descripcion-productos, color-fuente-desc);
+        font-weight: map-get($descripcion-productos, fuente-tipo);
+    }
+} 
+/*Mixin para pagina en construccion*/
+@mixin sitio-construccion($url,$origen) {
+    width: 100%;
+    height: 16.5vh;
+    background-image: $url;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        background-color: rgba(230, 168, 178, 0.842);
+        font-family: $font-title;
+        text-align: center;
+
+    }
+    @if($origen=='construccion-superior'){
+        @media only screen and (max-width:576px) {
+            h1{
+                font-size: $font-size-title;
+            }
+        }
+
+        @media only screen and (min-width:577px) and (max-width:768px) {
+            h1{
+                font-size: $font-size-title;
+            }
+        }
+
+        @media only screen and (min-width:769px) {
+            h1{
+                font-size: $font-size-title;
+            }
+        }
+    }
+    @else{
+        @media only screen and (max-width:576px) {
+            h1{
+                font-size: 2rem;
+            }
+        }
+ 
+        @media only screen and (min-width:577px) and (max-width:768px) {
+            h1{
+                font-size: $font-size-title;
+            }
+        }
+
+        @media only screen and (min-width:769px) {
+            h1{
+                font-size: $font-size-title;
             }
         }
     }

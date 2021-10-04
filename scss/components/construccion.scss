@@ -1,0 +1,33 @@
+@import '../base/listas';
+@import '../base/variables';
+@import '../base/mixins';
+
+main{
+    .web-en-construccion {
+        img {
+            width: 100%;
+
+            @media only screen and (max-width:576px) {
+                height: 40vh;
+            }
+
+            @media only screen and (min-width:577px) and (max-width:768px) {
+                height: 50vh;
+            }
+
+            @media only screen and (min-width:769px) {
+                height: 60vh;
+            }
+        }
+    }
+    .sitio-construccion{
+        
+        .sitio-construccion-titulo{
+            @include sitio-construccion(url(https://i.ibb.co/LRLd1xg/sitio-En-Construccion-difuminado-header-uno.png),'construccion-superior');
+
+        }
+    }
+    .sitio-construccion-titulo-dos{
+        @include sitio-construccion(url(https://i.ibb.co/LRLd1xg/sitio-En-Construccion-difuminado-header-uno.png),'construccion-inferior');
+    }
+}

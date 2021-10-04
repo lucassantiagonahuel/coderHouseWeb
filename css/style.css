@@ -29,6 +29,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
 @import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Vidaloka & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap");
 html {
   font-size: 62.5%;
 }
@@ -43,16 +57,24 @@ html {
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
 /*Mixin que controla los hover del header*/
 /*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
 /*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
 /*Mixin para los titulos de las secciones*/
 /*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
+/*Mixin para los titulos de las categorias en el carrusel del index principal*/
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
 /*Mixin que controla los textos que van sobre las imagenes del carrusel*/
+/*Mixin para los titulos de las secciones que van sobre la imagen de fondo de las mismas*/
+/*Mixin que controlara las imagenes,descripciones y precios de productos*/
+/*Mixin para pagina en construccion*/
 header .navbar {
   background-color: rgba(247, 218, 223, 0.9);
   box-shadow: 0px 2px 5px 0px rgba(255, 123, 123, 0.8);
@@ -187,16 +209,24 @@ footer .footer-derechos p a {
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
 /*Mixin que controla los hover del header*/
 /*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
 /*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
 /*Mixin para los titulos de las secciones*/
 /*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
+/*Mixin para los titulos de las categorias en el carrusel del index principal*/
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
 /*Mixin que controla los textos que van sobre las imagenes del carrusel*/
+/*Mixin para los titulos de las secciones que van sobre la imagen de fondo de las mismas*/
+/*Mixin que controlara las imagenes,descripciones y precios de productos*/
+/*Mixin para pagina en construccion*/
 main {
   background-color: rgba(255, 255, 255, 0.7);
 }
@@ -205,26 +235,6 @@ main .carrusel-principal {
 }
 main .carrusel-principal img {
   width: 100%;
-}
-@media only screen and (max-width: 576px) {
-  main .carrusel-principal img {
-    height: 42vh;
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  main .carrusel-principal img {
-    height: 58vh;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  main .carrusel-principal img {
-    height: 78vh;
-  }
-}
-@media only screen and (min-width: 1025px) {
-  main .carrusel-principal img {
-    height: 92.7vh;
-  }
 }
 main .carrusel-principal h3 {
   color: #fff2f4;
@@ -312,11 +322,16 @@ main .productos-exhibicion #ofertas {
   justify-content: center;
   align-items: center;
   transition: all 1s;
-  height: 38.5rem;
+  height: 35vh;
   width: 45rem;
 }
 main .productos-exhibicion #ofertas:hover {
   transform: scale(1.01);
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  main .productos-exhibicion #ofertas {
+    height: 60vh;
+  }
 }
 main .productos-exhibicion #liquidaciones {
   background-image: url(https://i.ibb.co/7pX6SSZ/liquidaciones-Bolsas.jpg);
@@ -327,11 +342,16 @@ main .productos-exhibicion #liquidaciones {
   justify-content: center;
   align-items: center;
   transition: all 1s;
-  height: 38.5rem;
+  height: 35vh;
   width: 45rem;
 }
 main .productos-exhibicion #liquidaciones:hover {
   transform: scale(1.01);
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  main .productos-exhibicion #liquidaciones {
+    height: 60vh;
+  }
 }
 main .productos-exhibicion #arosExhibicion {
   background-image: url(https://i.ibb.co/tLpGx46/aro-Acero-Blanco.jpg);
@@ -342,11 +362,16 @@ main .productos-exhibicion #arosExhibicion {
   justify-content: center;
   align-items: center;
   transition: all 1s;
-  height: 38.5rem;
+  height: 35vh;
   width: 45rem;
 }
 main .productos-exhibicion #arosExhibicion:hover {
   transform: scale(1.01);
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  main .productos-exhibicion #arosExhibicion {
+    height: 60vh;
+  }
 }
 main .productos-exhibicion #collarExhibicion {
   background-image: url(https://i.ibb.co/BnPbcGy/cadena-Con-Dije.jpg);
@@ -357,11 +382,16 @@ main .productos-exhibicion #collarExhibicion {
   justify-content: center;
   align-items: center;
   transition: all 1s;
-  height: 38.5rem;
+  height: 35vh;
   width: 45rem;
 }
 main .productos-exhibicion #collarExhibicion:hover {
   transform: scale(1.01);
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  main .productos-exhibicion #collarExhibicion {
+    height: 60vh;
+  }
 }
 main #clasicos {
   width: 100%;
@@ -431,21 +461,6 @@ main #clasicos h4 {
 main #clasicos img {
   width: 100%;
 }
-@media only screen and (max-width: 576px) {
-  main #clasicos img {
-    height: 43vh;
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  main #clasicos img {
-    height: 50vh;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  main #clasicos img {
-    height: 60vh;
-  }
-}
 @media only screen and (min-width: 1025px) {
   main #clasicos img {
     height: 70vh;
@@ -481,7 +496,7 @@ main #tendencias a {
   text-decoration: none;
 }
 main #tendencias a #ultimasTendencias {
-  background-image: url(https://i.ibb.co/yhd5RmM/ultima-Tendencia-Verde.jpg);
+  background-image: url(https://i.ibb.co/dJCwyDD/ultima-Tendencia-Verde-2.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -502,12 +517,20 @@ main #tendencias a #ultimasTendencias h3 {
     font-size: 2.2rem;
   }
 }
-@media only screen and (min-width: 577px) and (max-width: 1272px) {
+@media only screen and (min-width: 577px) and (max-width: 767px) {
   main #tendencias a #ultimasTendencias {
-    height: 50vh;
+    height: 75vh;
   }
   main #tendencias a #ultimasTendencias h3 {
-    font-size: 3.8rem;
+    font-size: 3.6rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1272px) {
+  main #tendencias a #ultimasTendencias {
+    height: 75vh;
+  }
+  main #tendencias a #ultimasTendencias h3 {
+    font-size: 4.8rem;
   }
 }
 @media only screen and (min-width: 1273px) {
@@ -547,21 +570,6 @@ main #categorias h2 {
 main #categorias img {
   width: 100%;
 }
-@media only screen and (max-width: 576px) {
-  main #categorias img {
-    height: 43vh;
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  main #categorias img {
-    height: 50vh;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  main #categorias img {
-    height: 60vh;
-  }
-}
 @media only screen and (min-width: 1025px) {
   main #categorias img {
     height: 70vh;
@@ -569,9 +577,23 @@ main #categorias img {
 }
 main #categorias h4 {
   display: inline;
-  font-size: 6rem;
   color: rgba(0, 0, 0, 0.8);
   background: rgba(255, 192, 203, 0.8);
+}
+@media only screen and (max-width: 576px) {
+  main #categorias h4 {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  main #categorias h4 {
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main #categorias h4 {
+    font-size: 6rem;
+  }
 }
 main #ubicacion {
   margin: 1rem 0;
@@ -627,12 +649,20 @@ main #ubicacion a #ubicacionImagenMapa h3 {
     font-size: 2rem;
   }
 }
-@media only screen and (min-width: 577px) and (max-width: 1272px) {
+@media only screen and (min-width: 577px) and (max-width: 767px) {
   main #ubicacion a #ubicacionImagenMapa {
-    height: 43vh;
+    height: 45vh;
   }
   main #ubicacion a #ubicacionImagenMapa h3 {
     font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1272px) {
+  main #ubicacion a #ubicacionImagenMapa {
+    height: 47vh;
+  }
+  main #ubicacion a #ubicacionImagenMapa h3 {
+    font-size: 4.3rem;
   }
 }
 @media only screen and (min-width: 1273px) {
@@ -647,16 +677,24 @@ main #ubicacion a #ubicacionImagenMapa h3 {
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
 /*Mixin que controla los hover del header*/
 /*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
 /*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
 /*Mixin para los titulos de las secciones*/
 /*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
+/*Mixin para los titulos de las categorias en el carrusel del index principal*/
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
 /*Mixin que controla los textos que van sobre las imagenes del carrusel*/
+/*Mixin para los titulos de las secciones que van sobre la imagen de fondo de las mismas*/
+/*Mixin que controlara las imagenes,descripciones y precios de productos*/
+/*Mixin para pagina en construccion*/
 main .categorias-presentacion .categorias-titulo {
   background-image: url(https://i.ibb.co/51b1BmQ/categoria-Header.jpg);
   background-position: center;
@@ -669,7 +707,7 @@ main .categorias-presentacion .categorias-titulo {
   width: 100%;
   height: 23vh;
 }
-main .categorias-presentacion .categorias-titulo h3 {
+main .categorias-presentacion .categorias-titulo h2 {
   background-color: rgba(179, 116, 126, 0.2);
   font-family: "Rokkitt", serif;
   text-align: center;
@@ -696,7 +734,7 @@ main .categorias-productos figure h5 {
 }
 main .categorias-productos figure p {
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   color: #ffb5c1;
   font-weight: bold;
 }
@@ -704,33 +742,26 @@ main .categorias-productos figure p {
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
 /*Mixin que controla los hover del header*/
 /*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
 /*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
 /*Mixin para los titulos de las secciones*/
 /*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
+/*Mixin para los titulos de las categorias en el carrusel del index principal*/
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
 /*Mixin que controla los textos que van sobre las imagenes del carrusel*/
+/*Mixin para los titulos de las secciones que van sobre la imagen de fondo de las mismas*/
+/*Mixin que controlara las imagenes,descripciones y precios de productos*/
+/*Mixin para pagina en construccion*/
 main .clasicos-presentacion img {
   width: 100%;
-}
-@media only screen and (max-width: 576px) {
-  main .clasicos-presentacion img {
-    height: 40vh;
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  main .clasicos-presentacion img {
-    height: 50vh;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  main .clasicos-presentacion img {
-    height: 60vh;
-  }
 }
 @media only screen and (min-width: 1025px) {
   main .clasicos-presentacion img {
@@ -757,7 +788,7 @@ main .clasicos-productos .clasicos-titulo h2 {
 }
 main .clasicos-productos figure img {
   width: 100%;
-  height: 20rem;
+  height: 35vh;
 }
 main .clasicos-productos figure h5 {
   text-align: center;
@@ -774,16 +805,24 @@ main .clasicos-productos figure p {
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
 /*Mixin que controla los hover del header*/
 /*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
 /*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
 /*Mixin para los titulos de las secciones*/
 /*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
+/*Mixin para los titulos de las categorias en el carrusel del index principal*/
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
 /*Mixin que controla los textos que van sobre las imagenes del carrusel*/
+/*Mixin para los titulos de las secciones que van sobre la imagen de fondo de las mismas*/
+/*Mixin que controlara las imagenes,descripciones y precios de productos*/
+/*Mixin para pagina en construccion*/
 main .combos-presentacion {
   background-image: url(https://i.ibb.co/SDS8dJ2/bella-Header.jpg);
   background-position: center;
@@ -804,7 +843,7 @@ main .combos-presentacion h2 {
 }
 main .combos-productos figure img {
   width: 100%;
-  height: 25vh;
+  height: 35vh;
 }
 main .combos-productos figure h5 {
   text-align: center;
@@ -821,33 +860,26 @@ main .combos-productos figure p {
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
 /*Mixin que controla los hover del header*/
 /*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
 /*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
 /*Mixin para los titulos de las secciones*/
 /*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
+/*Mixin para los titulos de las categorias en el carrusel del index principal*/
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
 /*Mixin que controla los textos que van sobre las imagenes del carrusel*/
+/*Mixin para los titulos de las secciones que van sobre la imagen de fondo de las mismas*/
+/*Mixin que controlara las imagenes,descripciones y precios de productos*/
+/*Mixin para pagina en construccion*/
 main .ingresos-presentacion img {
   width: 100%;
-}
-@media only screen and (max-width: 576px) {
-  main .ingresos-presentacion img {
-    height: 40vh;
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  main .ingresos-presentacion img {
-    height: 50vh;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  main .ingresos-presentacion img {
-    height: 60vh;
-  }
 }
 @media only screen and (min-width: 1025px) {
   main .ingresos-presentacion img {
@@ -908,7 +940,7 @@ main .ingresos-productos .ingresos-titulo h2 {
 }
 main .ingresos-productos figure img {
   width: 100%;
-  height: 20rem;
+  height: 35vh;
 }
 main .ingresos-productos figure h5 {
   text-align: center;
@@ -925,6 +957,24 @@ main .ingresos-productos figure p {
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
+/*Mixin que controla los hover del header*/
+/*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
+/*Mixin para los titulos de las secciones*/
+/*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
+/*Mixin para los titulos de las categorias en el carrusel del index principal*/
+/*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
+/*Mixin que controla los textos que van sobre las imagenes del carrusel*/
+/*Mixin para los titulos de las secciones que van sobre la imagen de fondo de las mismas*/
+/*Mixin que controlara las imagenes,descripciones y precios de productos*/
+/*Mixin para pagina en construccion*/
 main .contacto-presentacion img {
   width: 100%;
 }
@@ -944,8 +994,6 @@ main .contacto-presentacion img {
   }
 }
 main .contacto-form .contacto-titulo {
-  width: 100%;
-  height: 22vh;
   background-image: url(https://i.ibb.co/p2ngNmV/email-Header.jpg);
   background-position: center;
   background-size: cover;
@@ -953,6 +1001,9 @@ main .contacto-form .contacto-titulo {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
+  width: 100%;
+  height: 23vh;
 }
 main .contacto-form .contacto-titulo h2 {
   background-color: rgba(179, 116, 126, 0.2);
@@ -989,16 +1040,24 @@ main .contacto-form form button {
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
 /*Color titulo*/
 /*background navbar*/
 /*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
 /*Mixin que controla los hover del header*/
 /*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
 /*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
 /*Mixin para los titulos de las secciones*/
 /*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
+/*Mixin para los titulos de las categorias en el carrusel del index principal*/
 /*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
 /*Mixin que controla los textos que van sobre las imagenes del carrusel*/
+/*Mixin para los titulos de las secciones que van sobre la imagen de fondo de las mismas*/
+/*Mixin que controlara las imagenes,descripciones y precios de productos*/
+/*Mixin para pagina en construccion*/
 main .ubicacion-principal .ubicacion-titulo {
   background-image: url(https://i.ibb.co/B23R0CX/mujer-Header.jpg);
   background-position: center;
@@ -1016,6 +1075,302 @@ main .ubicacion-principal .ubicacion-titulo h2 {
   font-family: "Rokkitt", serif;
   text-align: center;
   font-size: 5rem;
+}
+
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
+/*Mixin que controla los hover del header*/
+/*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
+/*Mixin para los titulos de las secciones*/
+/*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
+/*Mixin para los titulos de las categorias en el carrusel del index principal*/
+/*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
+/*Mixin que controla los textos que van sobre las imagenes del carrusel*/
+/*Mixin para los titulos de las secciones que van sobre la imagen de fondo de las mismas*/
+/*Mixin que controlara las imagenes,descripciones y precios de productos*/
+/*Mixin para pagina en construccion*/
+main .web-en-construccion img {
+  width: 100%;
+}
+@media only screen and (max-width: 576px) {
+  main .web-en-construccion img {
+    height: 40vh;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  main .web-en-construccion img {
+    height: 50vh;
+  }
+}
+@media only screen and (min-width: 769px) {
+  main .web-en-construccion img {
+    height: 60vh;
+  }
+}
+main .sitio-construccion .sitio-construccion-titulo {
+  width: 100%;
+  height: 16.5vh;
+  background-image: url(https://i.ibb.co/LRLd1xg/sitio-En-Construccion-difuminado-header-uno.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sitio-construccion .sitio-construccion-titulo h1 {
+  background-color: rgba(230, 168, 178, 0.842);
+  font-family: "Rokkitt", serif;
+  text-align: center;
+}
+@media only screen and (max-width: 576px) {
+  main .sitio-construccion .sitio-construccion-titulo h1 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  main .sitio-construccion .sitio-construccion-titulo h1 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (min-width: 769px) {
+  main .sitio-construccion .sitio-construccion-titulo h1 {
+    font-size: 5rem;
+  }
+}
+main .sitio-construccion-titulo-dos {
+  width: 100%;
+  height: 16.5vh;
+  background-image: url(https://i.ibb.co/LRLd1xg/sitio-En-Construccion-difuminado-header-uno.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sitio-construccion-titulo-dos h1 {
+  background-color: rgba(230, 168, 178, 0.842);
+  font-family: "Rokkitt", serif;
+  text-align: center;
+}
+@media only screen and (max-width: 576px) {
+  main .sitio-construccion-titulo-dos h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  main .sitio-construccion-titulo-dos h1 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (min-width: 769px) {
+  main .sitio-construccion-titulo-dos h1 {
+    font-size: 5rem;
+  }
+}
+
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
+/*Mixin que controla los hover del header*/
+/*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
+/*Mixin para los titulos de las secciones*/
+/*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
+/*Mixin para los titulos de las categorias en el carrusel del index principal*/
+/*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
+/*Mixin que controla los textos que van sobre las imagenes del carrusel*/
+/*Mixin para los titulos de las secciones que van sobre la imagen de fondo de las mismas*/
+/*Mixin que controlara las imagenes,descripciones y precios de productos*/
+/*Mixin para pagina en construccion*/
+main .liquidaciones-presentacion img {
+  width: 100%;
+}
+@media only screen and (min-width: 1025px) {
+  main .liquidaciones-presentacion img {
+    height: 70vh;
+  }
+}
+main .liquidaciones-presentacion h5 {
+  display: inline;
+  background-color: rgba(179, 116, 126, 0.4);
+  color: #ffe2e2;
+}
+main .liquidaciones-presentacion p {
+  background-color: rgba(179, 116, 126, 0.4);
+  color: #ffe2e2;
+  font-weight: bold;
+}
+@media only screen and (max-width: 576px) {
+  main .liquidaciones-presentacion h5 {
+    font-size: 1.5rem;
+  }
+  main .liquidaciones-presentacion p {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+  main .liquidaciones-presentacion h5 {
+    font-size: 4rem;
+  }
+  main .liquidaciones-presentacion p {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  main .liquidaciones-presentacion h5 {
+    font-size: 5rem;
+  }
+  main .liquidaciones-presentacion p {
+    font-size: 4rem;
+  }
+}
+main .liquidaciones-productos .liquidaciones-titulo {
+  background-image: url(https://i.ibb.co/51b1BmQ/categoria-Header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  width: 100%;
+  height: 23vh;
+}
+main .liquidaciones-productos .liquidaciones-titulo h2 {
+  background-color: rgba(179, 116, 126, 0.2);
+  font-family: "Rokkitt", serif;
+  text-align: center;
+  font-size: 5rem;
+}
+main .liquidaciones-productos figure img {
+  width: 100%;
+  height: 35vh;
+}
+main .liquidaciones-productos figure h5 {
+  text-align: center;
+  font-size: 3rem;
+  color: #ff7b7b;
+}
+main .liquidaciones-productos figure p {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffb5c1;
+  font-weight: bold;
+}
+
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
+/*Color titulo*/
+/*background navbar*/
+/*background descripciones*/
+/*background de los mains*/
+/*Colores letras de descripciones de productos y/ secciones*/
+/*Mixin que controla los hover del header*/
+/*Mixin que se usa para las imagenes que tiene texto alinedo en el centro sobre ellas*/
+/*Mixin para los titulos que se colocan sobre los productos en exhibicion*/
+/*Mixin para los titulos de las secciones*/
+/*Mixin para las descripciones/precios que van a encontrarse en el carrusel de clasicos*/
+/*Mixin para los titulos de las categorias en el carrusel del index principal*/
+/*Mixin para control tamaño de carruseles, se toma por la salida 'else' a "carrusel-secciones-ventas" ya que son los carruseles restantes */
+/*Mixin que controla los textos que van sobre las imagenes del carrusel*/
+/*Mixin para los titulos de las secciones que van sobre la imagen de fondo de las mismas*/
+/*Mixin que controlara las imagenes,descripciones y precios de productos*/
+/*Mixin para pagina en construccion*/
+main .ofertas-presentacion img {
+  width: 100%;
+}
+@media only screen and (min-width: 1025px) {
+  main .ofertas-presentacion img {
+    height: 70vh;
+  }
+}
+main .ofertas-presentacion h5 {
+  display: inline;
+  background-color: rgba(179, 116, 126, 0.4);
+  color: #ffe2e2;
+}
+main .ofertas-presentacion p {
+  background-color: rgba(179, 116, 126, 0.4);
+  color: #ffe2e2;
+  font-weight: bold;
+}
+@media only screen and (max-width: 576px) {
+  main .ofertas-presentacion h5 {
+    font-size: 1.5rem;
+  }
+  main .ofertas-presentacion p {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+  main .ofertas-presentacion h5 {
+    font-size: 4rem;
+  }
+  main .ofertas-presentacion p {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  main .ofertas-presentacion h5 {
+    font-size: 5rem;
+  }
+  main .ofertas-presentacion p {
+    font-size: 4rem;
+  }
+}
+main .ofertas-productos .ofertas-titulo {
+  background-image: url(https://i.ibb.co/B23R0CX/mujer-Header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  width: 100%;
+  height: 23vh;
+}
+main .ofertas-productos .ofertas-titulo h2 {
+  background-color: rgba(179, 116, 126, 0.2);
+  font-family: "Rokkitt", serif;
+  text-align: center;
+  font-size: 5rem;
+}
+main .ofertas-productos figure img {
+  width: 100%;
+  height: 35vh;
+}
+main .ofertas-productos figure h5 {
+  text-align: center;
+  font-size: 3rem;
+  color: #ff7b7b;
+}
+main .ofertas-productos figure p {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffb5c1;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

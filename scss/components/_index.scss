@@ -3,8 +3,7 @@
 @import '../base/mixins';
 
 main {
-    background-color: rgba(255, 255, 255, 0.7);
-
+    background-color: $mains-colores;
     .carrusel-principal {
         margin-bottom: 0.5rem;
 
@@ -35,7 +34,7 @@ main {
         /*Titulos de los productos en exhibicion*/
         @include titulos-prod-exhibicion;
 
-
+ 
         #ofertas {
             @include imagenes-exhibicion(url(https://i.ibb.co/rkLMkm4/ofertas-Header-Recortada.jpg), 'index-exhibicion');
         }
@@ -69,36 +68,7 @@ main {
             text-decoration: none;
 
             #ultimasTendencias {
-                @include imagenes-exhibicion(url(https://i.ibb.co/yhd5RmM/ultima-Tendencia-Verde.jpg), 'index-exhibicion-tendencias');
-
-                h3 {
-                    color: rgba(0, 0, 0, 0.8);
-                    background: $colores-descripciones;
-                }
-
-                @media only screen and (max-width:576px) {
-                    height: 47vh;
-
-                    h3 {
-                        font-size: 2.2rem;
-                    }
-                }
-
-                @media only screen and (min-width:577px) and (max-width:1272px) {
-                    height: 50vh;
-
-                    h3 {
-                        font-size: 3.8rem;
-                    }
-                }
-
-                @media only screen and (min-width:1273px) {
-                    height: 90vh;
-
-                    h3 {
-                        font-size: 8rem;
-                    }
-                }
+                @include imagenes-exhibicion(url(https://i.ibb.co/dJCwyDD/ultima-Tendencia-Verde-2.png), 'index-exhibicion-tendencias');
 
             }
 
@@ -113,12 +83,7 @@ main {
             @include carrusel-tipo('carrusel-index-secciones');
         }
 
-        h4 {
-            display: inline;
-            font-size: 6rem;
-            color: rgba(0, 0, 0, 0.8);
-            background: $colores-descripciones;
-        }
+        @include categorias-descr-index;
     }
 
     #ubicacion {
@@ -131,34 +96,6 @@ main {
             #ubicacionImagenMapa {
                 @include imagenes-exhibicion(url(https://i.ibb.co/m8jr66y/mapaubicacion.jpg), 'index-exhibicion-ubicacion');
 
-                h3 {
-                    color: rgba(0, 0, 0, 0.8);
-                    background: $colores-descripciones;
-                }
-
-                @media only screen and (max-width:576px) {
-                    height: 35vh;
-
-                    h3 {
-                        font-size: 2rem;
-                    }
-                }
-
-                @media only screen and (min-width:577px) and (max-width:1272px) {
-                    height: 43vh;
-
-                    h3 {
-                        font-size: 3rem;
-                    }
-                }
-
-                @media only screen and (min-width:1273px) {
-                    height: 50vh;
-
-                    h3 {
-                        font-size: 6rem;
-                    }
-                }
             }
         }
     }
